@@ -7,6 +7,20 @@
 }
 body{
   font-family: 'Poppins', sans-serif;
-  background-color: #1a1a1ac9;
+  background: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)), url('images/background-image.jpg');
+  background-position: center;
+  background-size: cover;
   color: White;
+  position: relative;
+  height: 100vh;
+}
+.home{
+  /* display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column; */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }

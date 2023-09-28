@@ -47,7 +47,7 @@ nav ul{
 }
 .nav-link{
   text-decoration: none;
-  color: rgb(153, 150, 150);
+  color: #999696;
   font-size: 1.1em;
 }
 .nav-link::after{

@@ -78,3 +78,18 @@ nav ul{
   left: 0;
   bottom: -10px;
 }
+.social-icons{
+  margin-top: 45px;
+}
+.social-icons a{
+  text-decoration: none;
+  margin-right: 20px;
+  background-color: white;
+  display: inline-block;
+  vertical-align: middle;
+}
+.social-icons a img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

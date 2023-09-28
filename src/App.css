@@ -34,7 +34,7 @@ body{
   padding-bottom: 5px;
 }
 .home nav{
-  margin-top: 30px;
+  margin-top: 45px;
 }
 nav ul{
   position: relative;
@@ -47,15 +47,31 @@ nav ul{
 }
 .nav-link{
   text-decoration: none;
-  color: white;
+  color: rgb(153, 150, 150);
   font-size: 1.1em;
 }
+.nav-link::after{
+  content: '';
+  position: absolute;
+  background-color: #ff481d;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s ease-in-out;
+}
+.nav-link:hover::after{
+  width: 50%;
+}
+.active-link{
+  color: white;
+}
 .active-link::after{
- content: '';
- position: absolute;
- background-color: #ff481d;
- width: 50%;
- height: 2px;
- left: 0;
- bottom: -10px;
+  content: '';
+  position: absolute;
+  background-color: #ff481d;
+  width: 50%;
+  height: 2px;
+  left: 0;
+  bottom: -10px;
 }

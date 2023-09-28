@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Raleway:wght@500&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -7,7 +6,7 @@
 }
 body{
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)), url('images/background-image.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.87)), url('./images/background-image.jpg');
   background-position: center;
   background-size: cover;
   color: White;
@@ -15,12 +14,37 @@ body{
   height: 100vh;
 }
 .home{
-  /* display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column; */
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+  margin-left: 100px;
+}
+.home h1{
+  font-size: 3.5em;
+}
+.home p{
+  font-size: 1.7rem;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 10px;
+}
+.home p span{
+  color: #ff481d;
+  border-bottom: 3px solid #ff481d;
+  padding-bottom: 5px;
+}
+.home nav{
+  margin-top: 30px;
+}
+.home nav ul li{
+  list-style: none;
+}
+.nav-link{
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  margin-right: 50px;
+}
+.active-link{
+  border-bottom: 3px solid #ff481d;
 }

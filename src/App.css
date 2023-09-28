@@ -50,6 +50,9 @@ nav ul{
   color: #999696;
   font-size: 1.1em;
 }
+.nav-link:hover{
+  color: white;
+}
 .nav-link::after{
   content: '';
   position: absolute;

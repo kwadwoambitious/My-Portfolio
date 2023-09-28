@@ -7,11 +7,21 @@ function NavBar() {
     <>
        <nav>
         <ul>
-          <Link to="/" className='nav-link active-link'>Home</Link>
-          <Link to="/about" className='nav-link'>About</Link>
-          <Link to="/portfolio" className='nav-link'>Portfolio</Link>
-          <Link to="/certificates" className='nav-link'>Certificates</Link>
-          <Link to="/contact" className='nav-link'>Contact</Link>
+          <li>
+            <Link to="/" className='nav-link active-link'>Home</Link>
+          </li>
+          <li>
+            <Link to="/about" className='nav-link'>About</Link>
+          </li>
+          <li>
+            <Link to="/portfolio" className='nav-link'>Portfolio</Link>
+          </li>
+          <li>
+            <Link to="/certificates" className='nav-link'>Certificates</Link>
+          </li>
+          <li>
+            <Link to="/contact" className='nav-link'>Contact</Link>
+          </li>
         </ul>
        </nav>
     </>

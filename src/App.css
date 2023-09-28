@@ -6,7 +6,7 @@
 }
 body{
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.87)), url('./images/background-image.jpg');
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.774), rgb(0, 0, 0)), url('./images/background-image.jpg');
   background-position: center;
   background-size: cover;
   color: White;
@@ -36,15 +36,26 @@ body{
 .home nav{
   margin-top: 30px;
 }
+nav ul{
+  position: relative;
+}
 .home nav ul li{
   list-style: none;
+  display: inline-block;
+  position: relative;
+  margin-right: 50px;
 }
 .nav-link{
   text-decoration: none;
   color: white;
   font-size: 1.1em;
-  margin-right: 50px;
 }
-.active-link{
-  border-bottom: 3px solid #ff481d;
+.active-link::after{
+ content: '';
+ position: absolute;
+ background-color: #ff481d;
+ width: 50%;
+ height: 2px;
+ left: 0;
+ bottom: -10px;
 }

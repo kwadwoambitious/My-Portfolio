@@ -44,7 +44,7 @@ nav{
   align-items: center;
 }
 nav img{
-  width: 35px;
+  width: 30px;
   cursor: pointer;
   display: none;
 }
@@ -156,7 +156,7 @@ header{
     flex-direction: column;
     position: fixed;
     position: absolute;
-    width: 85vw;
+    width: 95vw;
     height: 82vh;
     z-index: 1;
     border: 3px solid #9996966c;

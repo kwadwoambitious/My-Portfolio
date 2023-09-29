@@ -1,8 +1,8 @@
 import React from 'react';
-import NavBar from './NavBar';
 import twitterIcon from './images/twitter-x-fill.svg';
 import linkedInIcon from './images/linkedin-logo.svg';
 import githubIcon from './images/github.svg';
+import NavBar from './NavBar';
 
 function Home() {
   return (

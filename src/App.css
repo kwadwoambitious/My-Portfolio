@@ -168,6 +168,7 @@ header{
     margin-bottom: 40px;
   }
   nav img{
+    display: block;
     position: absolute;
     top: 15px;
     right: 40px;

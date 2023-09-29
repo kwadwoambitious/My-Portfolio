@@ -22,6 +22,7 @@ body{
   flex-direction: column;
   justify-content: center;
   padding-left: 50px;
+  position: relative;
 }
 .home h1{
   font-size: 3.5em;
@@ -42,6 +43,14 @@ body{
 nav{
   display: flex;
   align-items: center;
+}
+.menu-bar{
+  width: 30px;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
 }
 nav img{
   width: 30px;
@@ -139,7 +148,7 @@ header{
     height: 100vh;
     z-index: 1;
     padding: 0;
-    /* display: none; */
+    display: none;
   }
   .nav-container nav{
     margin-top: 0;
@@ -162,10 +171,12 @@ header{
     border: 0.2rem solid #9996966c;
     border-radius: 3px;
     padding: 20px;
-    /* display: none; */
   }
   nav ul li{
     margin-bottom: 40px;
+  }
+  .menu-bar{
+    display: block;
   }
   nav img{
     display: block;

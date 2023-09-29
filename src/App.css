@@ -9,7 +9,7 @@ html{
 }
 body{
   font-family: 'Poppins', sans-serif;
-  background: url('./images/background-image.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.541)), url('./images/background-image.jpg');
   background-position: center;
   background-size: cover;
   color: White;

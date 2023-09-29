@@ -47,7 +47,7 @@ nav{
 .menu-bar{
   width: 35px;
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 30px;
   cursor: pointer;
   display: none;

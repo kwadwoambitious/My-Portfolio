@@ -70,11 +70,12 @@ nav ul li{
   text-decoration: none;
   color: #999696;
   font-size: 1.1em;
+  position: relative;
 }
 .nav-link:hover{
   color: white;
 }
-/* .nav-link::after{
+.nav-link::after{
   content: '';
   position: absolute;
   background-color: #ff481d;
@@ -98,9 +99,9 @@ nav ul li{
   height: 2px;
   left: 0;
   bottom: -10px;
-} */
+}
 .social-icons{
-  margin-top: 45px;
+  margin-top: 40px;
 }
 .social-icons a{
   text-decoration: none;
@@ -174,9 +175,11 @@ header{
     border: 0.2rem solid #9996966c;
     border-radius: 3px;
     padding: 20px;
+    display: block;
   }
   nav ul li{
     margin-bottom: 40px;
+    display: block;
   }
   .menu-bar{
     display: block;

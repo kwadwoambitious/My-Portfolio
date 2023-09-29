@@ -159,7 +159,7 @@ header{
     width: 95vw;
     height: 82vh;
     z-index: 1;
-    border: 3px solid #9996966c;
+    border: 1px solid #9996966c;
     border-radius: 3px;
     padding: 20px;
     /* display: none; */

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import menuBar from './images/menu.svg';
 import closeBar from './images/close-thin.svg';
 import '../App.css';
 

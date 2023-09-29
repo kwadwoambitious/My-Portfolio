@@ -139,6 +139,9 @@ header{
   color: white;
 }
 @media (max-width: 970px){
+  header{
+    padding: 10px 20px;
+  }
   .nav-container{
     position: fixed;
     left: 0;

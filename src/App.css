@@ -187,7 +187,6 @@ header{
     top: 15px;
     right: 40px;
   }
-  
 }
 @media (max-width: 500px){
   .home{
@@ -199,6 +198,9 @@ header{
     font-size: 2.7em;
   }
   .home p{
+    font-size: 1.5em;
+  }
+  .logo h1{
     font-size: 1.5em;
   }
 }

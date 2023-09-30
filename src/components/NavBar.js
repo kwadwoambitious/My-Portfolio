@@ -1,23 +1,16 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
-import menuBar from './images/menu.svg';
-import closeBar from './images/close-thin.svg';
 import '../App.css';
+import { LuMenu } from "react-icons/lu";
 
 function NavBar() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen((open) => !open);
-  }
-
   return (
     <>
         <nav>
         <div className='nav-container'>
           <ul>
             <li>
-              <NavLink to="/" className='nav-linkf'>Home</NavLink>
+              <NavLink to="/" className='nav-link'>Home</NavLink>
             </li>
             <li>
               <NavLink to="/about" className='nav-link'>About</NavLink>
@@ -32,9 +25,9 @@ function NavBar() {
               <NavLink to="/contact" className='nav-link'>Contact</NavLink>
             </li>
           </ul>
-          <img src={closeBar} alt="close-bar" className='close-bar'/>
+          <LuMenu className='menu-bar'/>
         </div>
-          <img src={menuBar} alt="menu-bar" className='menu-bar' onClick={toggleMenu}/>
+          
         </nav>
     </>
   )

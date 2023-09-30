@@ -12,48 +12,38 @@ body{
   background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.541)), url('./images/background-image.jpg');
   background-position: center;
   background-size: cover;
-  color: White;
+  background-attachment: fixed;
+  color: white;
   position: relative;
-  height: 100vh;
 }
 .home{
-  height: 100vh;
+  height: 83vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 50px;
   position: relative;
+  z-index: -1;
 }
 .home h1{
   font-size: 3.5em;
 }
-.home p{
+.home h2{
   font-size: 1.7rem;
   font-family: 'Raleway', sans-serif;
   margin-top: 10px;
 }
-.home p span{
+.home h2 span{
   color: #ff481d;
   border-bottom: 3px solid #ff481d;
   padding-bottom: 5px;
-}
-.home nav{
-  margin-top: 45px;
 }
 nav{
   display: flex;
   align-items: center;
 }
-.menu-bar{
+.menu-bar, .close-bar{
   width: 35px;
-  position: absolute;
-  top: 10px;
-  right: 30px;
-  cursor: pointer;
-  display: none;
-}
-nav img{
-  width: 30px;
   cursor: pointer;
   display: none;
 }
@@ -88,10 +78,10 @@ nav ul li{
 .nav-link:hover::after{
   width: 50%;
 }
-.active-link{
+.active{
   color: white;
 }
-.active-link::after{
+.active::after{
   content: '';
   position: absolute;
   background-color: #ff481d;
@@ -125,7 +115,7 @@ nav ul li{
   background-color: #ff481d;
 }
 header{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.329);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -139,6 +129,9 @@ header{
 .logo h1{
   color: white;
 }
+.logo h1 span{
+  color: #ff481d;
+}
 @media (max-width: 970px){
   header{
     padding: 10px 20px;
@@ -147,35 +140,26 @@ header{
     position: fixed;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.959);
+    background: rgba(0, 0, 0, 0.966);
     width: 100vw;
     height: 100vh;
     z-index: 1;
     padding: 0;
-    /* display: none; */
-  }
-  .nav-container nav{
-    margin-top: 0;
-  }
-  nav{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    display: none;
   }
   nav ul{
     display: flex;
     flex-direction: column;
     position: fixed;
-    position: absolute;
-    width: 95vw;
-    height: 82vh;
+    width: 85vw;
+    height: 85vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
     border: 0.2rem solid #9996966c;
     border-radius: 3px;
     padding: 20px;
-    display: block;
   }
   nav ul li{
     margin-bottom: 40px;
@@ -184,25 +168,32 @@ header{
   .menu-bar{
     display: block;
   }
-  nav img{
+  .close-bar{
     display: block;
     position: absolute;
-    top: 15px;
-    right: 40px;
+    top: 10px;
+    right: 20px;
   }
+}
+.about-container{
+  background-color: black;
+  margin-top: 50px;
+}
+.about-container h2{
+  color: white;
 }
 @media (max-width: 500px){
   .home{
     align-items: center;
     padding: 0;
   }
-  .home h1, p, a{
+  .home h1, h2, a{
     text-align: center;
   }
   .home h1{
     font-size: 2.7em;
   }
-  .home p, .logo h1{
+  .home h2, .logo h1{
     font-size: 1.5em;
   }
 }

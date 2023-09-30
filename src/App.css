@@ -145,13 +145,17 @@ header{
     height: 100vh;
     z-index: 1;
     padding: 0;
-    display: none;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+  }
+  .nav-container.show{
+    transform: scale(1);
   }
   nav ul{
     display: flex;
     flex-direction: column;
     position: fixed;
-    width: 85vw;
+    width: 90vw;
     height: 85vh;
     top: 50%;
     left: 50%;
@@ -171,7 +175,7 @@ header{
   .close-bar{
     display: block;
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 20px;
   }
 }

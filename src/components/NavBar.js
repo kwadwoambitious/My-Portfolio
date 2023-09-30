@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import '../App.css';
-import { LuMenu } from "react-icons/lu";
+import { LuMenu, LuX } from "react-icons/lu";
 
 function NavBar() {
   return (
@@ -25,7 +25,7 @@ function NavBar() {
               <NavLink to="/contact" className='nav-link'>Contact</NavLink>
             </li>
           </ul>
-          
+          <LuX className='close-bar'/>
         </div>
         <LuMenu className='menu-bar'/>
         </nav>

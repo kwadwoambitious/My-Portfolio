@@ -1,13 +1,18 @@
-import React, { useState } from 'react'
+import React, { useRef } from 'react'
 import { NavLink } from 'react-router-dom';
 import '../App.css';
 import { LuMenu, LuX } from "react-icons/lu";
 
 function NavBar() {
+  const navRef = useRef();
+
+  const showNavMenu = () => {
+    navRef.current.classList.toggle('show');
+  }
   return (
     <>
         <nav>
-        <div className='nav-container'>
+        <div className='nav-container' ref={navRef}>
           <ul>
             <li>
               <NavLink to="/" className='nav-link'>Home</NavLink>
@@ -25,9 +30,9 @@ function NavBar() {
               <NavLink to="/contact" className='nav-link'>Contact</NavLink>
             </li>
           </ul>
-          <LuX className='close-bar'/>
+          <LuX className='close-bar' onClick={showNavMenu}/>
         </div>
-        <LuMenu className='menu-bar'/>
+        <LuMenu className='menu-bar' onClick={showNavMenu}/>
         </nav>
     </>
   )

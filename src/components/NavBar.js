@@ -25,9 +25,9 @@ function NavBar() {
               <NavLink to="/contact" className='nav-link'>Contact</NavLink>
             </li>
           </ul>
-          <LuMenu className='menu-bar'/>
-        </div>
           
+        </div>
+        <LuMenu className='menu-bar'/>
         </nav>
     </>
   )

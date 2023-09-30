@@ -45,7 +45,7 @@ nav{
 .menu-bar, .close-bar{
   font-size: 30px;
   cursor: pointer;
-  
+  display: none;
 }
 nav ul{
   position: relative;

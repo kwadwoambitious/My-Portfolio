@@ -126,6 +126,14 @@ const Interest = () => {
   )
 }
 
+const Services = () => {
+  return (
+    <>
+      <h4 className="title">SERVICES</h4>
+    </>
+  )
+}
+
 const About = () => {
   return (
     <>
@@ -133,6 +141,7 @@ const About = () => {
         <AboutMe/>
         <Skills/>
         <Interest/>
+        <Services/>
       </div>
     </>
     

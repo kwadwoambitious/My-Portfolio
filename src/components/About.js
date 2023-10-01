@@ -45,7 +45,7 @@ const Skills = () => {
           <p>JAVASCRIPT</p>
         </div>
         <div>
-          <img src={reactImg} alt="react logo" className="react-img"/>
+          <img src={reactImg} alt="react logo"/>
           <p>REACT</p>
         </div>
         <div>

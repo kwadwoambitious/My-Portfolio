@@ -4,6 +4,7 @@ import cssImg from '../images/css.png';
 import javascriptImg from '../images/javascript.png';
 import gitImg from '../images/git.png';
 import githubImg from '../images/github.png';
+import reactImg from '../images/reactjs.svg';
 import writingImg from '../components/images/writing.svg';
 import musicImg from '../components/images/music.svg';
 import readingImg from '../components/images/reading.svg';

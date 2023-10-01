@@ -45,16 +45,16 @@ const Skills = () => {
           <p>JAVASCRIPT</p>
         </div>
         <div>
+          <img src={reactImg} alt="react logo" className="react-img"/>
+          <p>REACT</p>
+        </div>
+        <div>
           <img src={gitImg} alt="git logo"/>
           <p>GIT</p>
         </div>
         <div>
           <img src={githubImg} alt="github logo"/>
           <p>GITHUB</p>
-        </div>
-        <div>
-          <img src={reactImg} alt="react logo"/>
-          <p>REACT</p>
         </div>
         <div>
           <img src={htmlImg} alt="html logo"/>

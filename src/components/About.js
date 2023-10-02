@@ -2,6 +2,7 @@ import React from "react";
 import htmlImg from '../images/html.png';
 import cssImg from '../images/css.png';
 import javascriptImg from '../images/javascript.png';
+import bootstrapImg from '../images/bootstrap.png';
 import gitImg from '../images/git.png';
 import githubImg from '../images/github.png';
 import reactImg from '../images/reactjs.svg';
@@ -42,43 +43,23 @@ const Skills = () => {
         </div>
         <div>
           <img src={javascriptImg} alt="javascript logo"/>
-          <p>JAVASCRIPT</p>
+          <p>JavaScript</p>
+        </div>
+        <div>
+          <img src={bootstrapImg} alt="bootstrap logo"/>
+          <p>Bootstrap</p>
         </div>
         <div>
           <img src={reactImg} alt="react logo"/>
-          <p>REACT</p>
+          <p>React</p>
         </div>
         <div>
           <img src={gitImg} alt="git logo"/>
-          <p>GIT</p>
+          <p>Git</p>
         </div>
         <div>
           <img src={githubImg} alt="github logo"/>
-          <p>GITHUB</p>
-        </div>
-        <div>
-          <img src={htmlImg} alt="html logo"/>
-          <p>HTML</p>
-        </div>
-        <div>
-          <img src={cssImg} alt="css logo"/>
-          <p>CSS</p>
-        </div>
-        <div>
-          <img src={javascriptImg} alt="javascript logo"/>
-          <p>JAVASCRIPT</p>
-        </div>
-        <div>
-          <img src={gitImg} alt="git logo"/>
-          <p>GIT</p>
-        </div>
-        <div>
-          <img src={htmlImg} alt="html logo"/>
-          <p>HTML</p>
-        </div>
-        <div>
-          <img src={cssImg} alt="css logo"/>
-          <p>CSS</p>
+          <p>GitHub</p>
         </div>
       </div>
     </>

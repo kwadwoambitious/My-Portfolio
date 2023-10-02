@@ -214,7 +214,7 @@ header{
 }
 .interest-content div{
   background-color: rgba(255, 255, 255, 0.11);
-  padding: 35px 20px;
+  padding: 30px 20px;
   display: flex;
   align-items: center;
   transition: 0.15s ease-in-out;
@@ -230,7 +230,6 @@ header{
 .interest-content img{
   width: 35px;
   margin-right: 15px;
-
 }
 @media (max-width: 970px){
   header{

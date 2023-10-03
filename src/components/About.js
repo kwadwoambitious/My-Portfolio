@@ -1,19 +1,19 @@
 import React from "react";
-import htmlImg from '../images/html.png';
-import cssImg from '../images/css.png';
-import javascriptImg from '../images/javascript.png';
-import bootstrapImg from '../images/bootstrap.png';
-import gitImg from '../images/git.png';
-import githubImg from '../images/github.png';
-import reactImg from '../images/reactjs.svg';
-import writingImg from '../components/images/writing.svg';
-import musicImg from '../components/images/music.svg';
-import readingImg from '../components/images/reading.svg';
-import selfDevImg from '../components/images/self-development.svg';
-import basketballImg from '../components/images/basketball.svg';
-import moviesImg from '../components/images/movies.svg';
-import programmingImg from '../components/images/programming.svg';
-import peaceImg from '../components/images/calm-atmosphere.svg';
+import htmlImg from '../images/skills/html.png';
+import cssImg from '../images/skills/css.png';
+import javascriptImg from '../images/skills/javascript.png';
+import bootstrapImg from '../images/skills/bootstrap.png';
+import gitImg from '../images/skills/git.png';
+import githubImg from '../images/skills/github.png';
+import reactImg from '../images/skills/reactjs.svg';
+import writingImg from '../components/images/interests/writing.svg';
+import musicImg from '../components/images/interests/music.svg';
+import readingImg from '../components/images/interests/reading.svg';
+import selfDevImg from '../components/images/interests/self-development.svg';
+import basketballImg from '../components/images/interests/basketball.svg';
+import moviesImg from '../components/images/interests/movies.svg';
+import programmingImg from '../components/images/interests/programming.svg';
+import peaceImg from '../components/images/interests/calm-atmosphere.svg';
 
 const AboutMe = () => {
   return(

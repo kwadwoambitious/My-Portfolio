@@ -1,7 +1,5 @@
 import React from 'react';
-import twitterIcon from './images/twitter-x-fill.svg';
-import linkedInIcon from './images/linkedin-logo.svg';
-import githubIcon from './images/github.svg';
+import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Home() {
   return (
@@ -10,9 +8,9 @@ function Home() {
         <h1>Ebenezer Antwi</h1>
         <h2>I'm a <span>Front-end Developer.</span></h2>
           <div className='social-icons'>
-            <a href="https://twitter.com/_antwiebenezer" target='_blank'><img src={twitterIcon} alt='twitter-logo'/></a>
-            <a href="https://www.linkedin.com/in/antwi-ebenezer" target='_blank'><img src={linkedInIcon} alt='linkedIn-logo'/></a>
-            <a href="https://github.com/kwadwoambitious" target='_blank'><img src={githubIcon} alt='githun-logo'/></a>
+                  <a href="https://twitter.com/_antwiebenezer" target='_blank'><FaTwitter className='icon'/></a>
+                  <a href="https://www.linkedin.com/in/antwi-ebenezer" target='_blank'><FaLinkedin className='icon'/></a>
+                  <a href="https://github.com/kwadwoambitious" target='_blank'><FaGithub className='icon'/></a>
           </div>
       </div>
     </>

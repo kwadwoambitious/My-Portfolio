@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaTwitter, FaLinkedin, FaGithub  } from "react-icons/fa";
 import { LuShare } from 'react-icons/lu';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Socials = () => {
   return (
@@ -43,9 +45,12 @@ const ContactForm = () => {
 }
 
 const Contact = () => {
+  useEffect(()=> {
+    Aos.init({duration: 2000});
+  }, [])
   return (
     <>
-      <div className="contact-container">
+      <div className="contact-container" data-aos="fade-in">
         <h4>CONTACT</h4>
         <h2>CONTACT ME</h2>
         <Socials/>

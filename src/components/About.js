@@ -120,7 +120,7 @@ const Services = () => {
 
 const About = () => {
   useEffect(()=> {
-    Aos.init({duration: 2000});
+    Aos.init({duration: 400});
   }, [])
   return (
     <>

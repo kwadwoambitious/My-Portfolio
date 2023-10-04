@@ -22,7 +22,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 50px;
+  padding: 25px 50px;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -102,7 +102,7 @@ nav ul li{
 }
 .home h2{
   font-size: 1.7rem;
-  font-family: 'Raleway', sans-serif;font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin-top: 10px;
 }
 .home h2 span{
@@ -326,7 +326,7 @@ form input[type="submit"]:hover{
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    padding: 0;
+    /* padding: 0; */
     transform: scale(0);
     transition: 0.2s ease-in-out;
   }

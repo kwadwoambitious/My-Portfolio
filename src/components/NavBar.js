@@ -9,25 +9,29 @@ function NavBar() {
   const showNavMenu = () => {
     navRef.current.classList.toggle('show');
   }
+
+  const closeMenu = () => {
+    navRef.current.classList.remove('show');
+  }
   return (
     <>
         <nav>
         <div className='nav-container' ref={navRef}>
           <ul>
             <li>
-              <NavLink to="/" className='nav-link'>Home</NavLink>
+              <NavLink to="/" className='nav-link' onClick={closeMenu}>Home</NavLink>
             </li>
             <li>
-              <NavLink to="/about" className='nav-link'>About</NavLink>
+              <NavLink to="/about" className='nav-link' onClick={closeMenu}>About</NavLink>
             </li>
             <li>
-              <NavLink to="/portfolio" className='nav-link'>Portfolio</NavLink>
+              <NavLink to="/portfolio" className='nav-link' onClick={closeMenu}>Portfolio</NavLink>
             </li>
             <li>
-              <NavLink to="/certificates" className='nav-link'>Certificates</NavLink>
+              <NavLink to="/certificates" className='nav-link' onClick={closeMenu}>Certificates</NavLink>
             </li>
             <li>
-              <NavLink to="/contact" className='nav-link'>Contact</NavLink>
+              <NavLink to="/contact" className='nav-link' onClick={closeMenu}>Contact</NavLink>
             </li>
           </ul>
           <LuX className='close-bar' onClick={showNavMenu}/>

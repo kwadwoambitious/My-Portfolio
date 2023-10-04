@@ -23,9 +23,9 @@ const AboutMe = () => {
         <h4>ABOUT</h4>
         <h2>LEARN MORE ABOUT ME</h2>
         <h3>Front-end Developer</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aperiam id voluptatem ipsam unde, a sint ab labore voluptates odit, voluptatibus porro atque soluta ducimus ea est adipisci voluptate quo dignissimos nam rem. </p>
-        <p>Qui est inventore incidunt, et illo, ea unde ut deleniti exercitationem necessitatibus sunt veniam amet esse beatae ad voluptatem tempore, earum doloribus repellendus placeat blanditiis quae. Voluptatum, perferendis, sequi fugit sunt voluptates sed fuga possimus accusantium odio excepturi iusto laboriosam cum recusandae dolore, officia reprehenderit aspernatur hic est exercitationem vitae provident. </p>
-        <p>Quae soluta commodi facere neque at obcaecati. Architecto sint autem beatae placeat optio nam commodi consequuntur nemo, asperiores reiciendis laborum illo pariatur aliquid ipsam perferendis quis voluptatum? Expedita distinctio dolor eligendi, reiciendis sit blanditiis possimus debitis beatae delectus esse! Vel quam nobis necessitatibus tempore quidem voluptate temporibus dolorem consequuntur iure doloremque perferendis.</p>
+        <p>As a seasoned front-end developer specializing in HTML, CSS, JavaScript, and React, I bring a comprehensive skill set to web development. My expertise encompasses crafting clean and semantic HTML, employing advanced CSS techniques for responsive and visually appealing designs, and building dynamic interfaces with JavaScript, utilizing modern frameworks like React. </p>
+        <p>With a user-centric focus, I prioritize creating intuitive and engaging experiences, incorporating feedback to iteratively enhance designs. A collaborative team player, I communicate effectively with designers, back-end developers, and stakeholders to translate concepts into functional code.  </p>
+        <p> Committed to continuous learning, I stay updated on emerging technologies, ensuring my work remains cutting-edge and adaptable in the ever-evolving landscape of web development. My goal is to contribute to projects that not only meet technical requirements but also surpass user expectations, leaving a lasting impact in the digital sphere.</p>
     </>
   )
 }

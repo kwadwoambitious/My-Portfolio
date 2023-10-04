@@ -46,7 +46,7 @@ const ContactForm = () => {
 
 const Contact = () => {
   useEffect(()=> {
-    Aos.init({duration: 400, reset: false});
+    Aos.init({duration: 400});
   }, [])
   return (
     <>

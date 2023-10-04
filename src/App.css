@@ -15,7 +15,7 @@ body{
   background-attachment: fixed;
   color: white;
   position: relative;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 header{
   background-color: #030303de;

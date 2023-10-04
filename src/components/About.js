@@ -34,7 +34,7 @@ const Skills = () => {
   return (
     <>
       <h4 className="title">SKILLS</h4>
-      <div className="skill-content">
+      <div className="skill-content" data-aos="fade-in">
         <div>
           <img src={htmlImg} alt="html logo"/>
           <p>HTML</p>
@@ -72,7 +72,7 @@ const Interest = () => {
   return (
     <>
       <h4 class="title">INTERESTS</h4>
-      <div className="interest-content">
+      <div className="interest-content" data-aos="fade-in">
         <div>
           <img src={writingImg} alt="writing img"/>
           <h3>Writing</h3>
@@ -120,7 +120,7 @@ const Services = () => {
 
 const About = () => {
   useEffect(()=> {
-    Aos.init({duration: 400});
+    Aos.init({duration: 400, once: true});
   }, [])
   return (
     <>

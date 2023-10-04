@@ -317,7 +317,7 @@ form input[type="submit"]:hover{
 }
 @media (max-width: 970px){
   header{
-    padding: 10px 20px;
+    padding: 15px 20px;
   }
   .nav-container{
     position: fixed;

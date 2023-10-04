@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../App.css';
 import { LuMenu, LuX } from "react-icons/lu";
@@ -8,6 +8,12 @@ function NavBar() {
 
   const showNavMenu = () => {
     navRef.current.classList.toggle('show');
+    if (navRef.current.classList.contains('show')){
+      document.body.style.overflowY = 'hidden';
+    }
+    else{
+      document.body.style.overflowY = 'auto';
+    }
   }
 
   const closeMenu = () => {

@@ -46,11 +46,11 @@ const ContactForm = () => {
 
 const Contact = () => {
   useEffect(()=> {
-    Aos.init({duration: 2000});
+    Aos.init({duration: 2000, reset: false});
   }, [])
   return (
     <>
-      <div className="contact-container" data-aos="fade-in">
+      <div className="contact-container" data-aos="fade-up">
         <h4>CONTACT</h4>
         <h2>CONTACT ME</h2>
         <Socials/>

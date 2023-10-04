@@ -18,6 +18,7 @@ function NavBar() {
 
   const closeMenu = () => {
     navRef.current.classList.remove('show');
+    document.body.style.overflowY = 'auto';
   }
   return (
     <>

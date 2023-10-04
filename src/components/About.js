@@ -124,7 +124,7 @@ const About = () => {
   }, [])
   return (
     <>
-      <div className='about-container' data-aos="fade-in">
+      <div className='about-container' data-aos="fade-up">
         <AboutMe/>
         <Skills/>
         <Interest/>

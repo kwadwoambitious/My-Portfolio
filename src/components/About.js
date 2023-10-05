@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import React from "react";
+import { motion } from 'framer-motion';
 import htmlImg from '../images/skills/html.png';
 import cssImg from '../images/skills/css.png';
 import javascriptImg from '../images/skills/javascript.png';
@@ -16,12 +15,13 @@ import basketballImg from '../components/images/interests/basketball.svg';
 import moviesImg from '../components/images/interests/movies.svg';
 import programmingImg from '../components/images/interests/programming.svg';
 import peaceImg from '../components/images/interests/calm-atmosphere.svg';
+import { FaChevronUp } from "react-icons/fa";
 
 const AboutMe = () => {
   return(
     <>
         <h4>ABOUT</h4>
-        <h2>LEARN MORE ABOUT ME</h2>
+        <h2>GET TO KNOW ME WELL</h2>
         <h3>Front-end Developer</h3>
         <p>As a seasoned front-end developer specializing in HTML, CSS, JavaScript, and React, I bring a comprehensive skill set to web development. My expertise encompasses crafting clean and semantic HTML, employing advanced CSS techniques for responsive and visually appealing designs, and building dynamic interfaces with JavaScript, utilizing modern frameworks like React. </p>
         <p>With a user-centric focus, I prioritize creating intuitive and engaging experiences, incorporating feedback to iteratively enhance designs. A collaborative team player, I communicate effectively with designers, back-end developers, and stakeholders to translate concepts into functional code.  </p>
@@ -35,7 +35,7 @@ const Skills = () => {
   return (
     <>
       <h4 className="title">SKILLS</h4>
-      <div className="skill-content" data-aos="fade-in">
+      <div className="skill-content">
         <div>
           <img src={htmlImg} alt="html logo"/>
           <p>HTML</p>
@@ -73,7 +73,7 @@ const Interest = () => {
   return (
     <>
       <h4 class="title">INTERESTS</h4>
-      <div className="interest-content" data-aos="fade-in">
+      <div className="interest-content">
         <div>
           <img src={writingImg} alt="writing img"/>
           <h3>Writing</h3>
@@ -120,17 +120,24 @@ const Services = () => {
 }
 
 const About = () => {
-  useEffect(()=> {
-    Aos.init({duration: 400, once: true});
-  }, [])
   return (
     <>
-      <div className='about-container' data-aos="fade-up">
+      <a href="#">
+            <div className="chevronup-container">
+              <FaChevronUp className="chevronup-icon"/>
+            </div>
+      </a>
+      <motion.div 
+        initial={{ x: '100vw' }}
+        animate={{ x: 0 }}
+        transition={{ type: 'spring', stiffness: 100, delay: 0.2 }}
+
+        className='about-container'>
         <AboutMe/>
         <Skills/>
         <Interest/>
         <Services/>
-      </div>
+      </motion.div>
     </>
     
   )

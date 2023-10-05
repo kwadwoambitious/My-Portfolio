@@ -5,12 +5,12 @@ import 'aos/dist/aos.css';
 
 function Home() {
   useEffect(()=> {
-    Aos.init({duration: 2000});
+    Aos.init({duration: 400, once: true});
   }, [])
 
   return (
     <>
-      <div className="home" data-aos="fade-in">
+      <div className="home" data-aos="fade-down">
         <h1>Ebenezer Antwi</h1>
         <h2>I'm a <span>Front-end Developer.</span></h2>
           <div className='social-icons'>

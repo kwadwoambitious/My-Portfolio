@@ -28,15 +28,24 @@ header{
   top: 0;
   z-index: 1;
 }
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo .icon{
+  font-size: 32px;
+  margin-right: 5px;
+  color: #0164d5;
+}
 .logo a{
   text-decoration: none;
 }
 .logo h1{
-  color: white;
+  color: #0164d5;
   font-family: 'Dancing Script', cursive;
 }
 .logo h1 span{
-  color: #0164d5
+  color: white;
 }
 nav{
   display: flex;
@@ -112,6 +121,25 @@ nav ul li{
   color: #0164d5;
   border-bottom: 3px solid #0164d5;
   padding-bottom: 5px;
+}
+.chevronup-container{
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  width: 47px;
+  height: 47px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 1;
+}
+.chevronup-icon{
+  font-size: 20px;
+  color: #0164d5;
+  padding: 0;
+  margin: 0;
 }
 .social-icons{
   margin-top: 40px;

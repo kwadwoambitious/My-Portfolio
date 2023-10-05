@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
-import { FaTwitter, FaLinkedin, FaGithub  } from "react-icons/fa";
+import { motion } from 'framer-motion';
+import React from 'react';
+import { FaTwitter, FaLinkedin, FaGithub, FaChevronUp  } from "react-icons/fa";
 import { LuShare } from 'react-icons/lu';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 
 const Socials = () => {
   return (
@@ -45,17 +44,24 @@ const ContactForm = () => {
 }
 
 const Contact = () => {
-  useEffect(()=> {
-    Aos.init({duration: 400});
-  }, [])
   return (
     <>
-      <div className="contact-container" data-aos="fade-up">
+      <a href="#">
+            <div className="chevronup-container">
+              <FaChevronUp className="chevronup-icon"/>
+            </div>
+      </a>
+      <motion.div
+        initial={{ x: '100vw' }}
+        animate={{ x: 0 }}
+        transition={{ type: 'spring', stiffness: 100, delay: 0.2 }}
+
+        className="contact-container">
         <h4>CONTACT</h4>
         <h2>CONTACT ME</h2>
         <Socials/>
         <ContactForm/>
-      </div>
+      </motion.div>
     </>
   )
 }

@@ -1,24 +1,24 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import { motion } from 'framer-motion';
 
 function Home() {
-  useEffect(()=> {
-    Aos.init({duration: 400, once: true});
-  }, [])
-
   return (
     <>
-      <div className="home" data-aos="fade-down">
-        <h1>Ebenezer Antwi</h1>
-        <h2>I'm a <span>Front-end Developer.</span></h2>
-          <div className='social-icons'>
-                  <a href="https://twitter.com/_antwiebenezer" target='_blank'><FaTwitter className='icon'/></a>
-                  <a href="https://www.linkedin.com/in/antwi-ebenezer" target='_blank'><FaLinkedin className='icon'/></a>
-                  <a href="https://github.com/kwadwoambitious" target='_blank'><FaGithub className='icon'/></a>
-          </div>
-      </div>
+        <motion.div
+            initial={{ x: '100vw' }}
+            animate={{ x: 0 }}
+            transition={{ type: 'spring', stiffness: 100, delay: 0.2 }}
+            
+            className="home">
+          <h1>Ebenezer Antwi</h1>
+          <h2>I'm a <span>Front-end Developer.</span></h2>
+            <div className='social-icons'>
+                    <a href="https://twitter.com/_antwiebenezer" target='_blank'><FaTwitter className='icon'/></a>
+                    <a href="https://www.linkedin.com/in/antwi-ebenezer" target='_blank'><FaLinkedin className='icon'/></a>
+                    <a href="https://github.com/kwadwoambitious" target='_blank'><FaGithub className='icon'/></a>
+            </div>
+        </motion.div>
     </>
   )
 }

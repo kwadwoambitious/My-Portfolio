@@ -271,6 +271,57 @@ nav ul li{
   width: 35px;
   margin-right: 15px;
 }
+.projects-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+  gap: 50px;
+  justify-content: center;
+}
+.projects-container img{
+  max-width: 500px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.87);
+  z-index: 1;
+}
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  background: #f1f1f1;
+  padding: 30px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+}
+.modal h2{
+  color: #0164d5;
+}
+.modal p{
+  margin-top: 10px;
+}
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #0164d5;
+  font-size: 1.5em;
+}
+body.active-modal {
+  overflow-y: hidden;
+}
 .certs{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, auto));
@@ -434,6 +485,9 @@ form input[type="submit"]:hover{
     padding: 20px;
   }
   .certs{
+    grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+  }
+  .projects-container{
     grid-template-columns: repeat(auto-fit, minmax(100%, auto));
   }
 }

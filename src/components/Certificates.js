@@ -4,7 +4,6 @@ import javaScript from '../components/images/certificates/Programming_with_JavaS
 import webDesign2 from '../components/images/certificates/Responsive-Web-Design_certificate.jpg';
 import htmlCourse from '../components/images/certificates/HTML_certificate.jpg';
 import { motion } from 'framer-motion';
-import { FaChevronUp } from 'react-icons/fa';
 
 const Certificates = () => {
   return (

@@ -125,7 +125,7 @@ const Portfolio = () => {
       <motion.div
         initial={{ x: '100vw' }}
         animate={{ x: 0 }}
-        transition={{ type: 'spring', stiffness: 100, duration: 0.1, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ type: 'spring', stiffness: 100, ease: [0.22, 1, 0.36, 1] }}
 
         className="portfolio-container">
         <h4>PORTFOLIO</h4>

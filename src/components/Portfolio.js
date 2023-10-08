@@ -31,11 +31,6 @@ const Portfolio = () => {
 
   return (
     <>
-      <a href="#">
-            <div className="chevronup-container">
-              <FaChevronUp className="chevronup-icon"/>
-            </div>
-      </a>
       <AnimatePresence mode="wait">
         {modal && (
           <motion.div 

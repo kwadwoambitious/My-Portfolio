@@ -13,9 +13,9 @@ const Socials = () => {
           <div>
               <h3>Social Profiles</h3>
               <div className='icons'>
-                  <a href="https://twitter.com/_antwiebenezer" target='_blank'><FaTwitter/></a>
-                  <a href="https://www.linkedin.com/in/antwi-ebenezer" target='_blank'><FaLinkedin/></a>
-                  <a href="https://github.com/kwadwoambitious" target='_blank'><FaGithub/></a>
+                  <a href="https://twitter.com/_antwiebenezer" target='_blank' rel='noreferrer'><FaTwitter/></a>
+                  <a href="https://www.linkedin.com/in/antwi-ebenezer" target='_blank' rel='noreferrer'><FaLinkedin/></a>
+                  <a href="https://github.com/kwadwoambitious" target='_blank' rel='noreferrer'><FaGithub/></a>
               </div>
           </div>
       </div>

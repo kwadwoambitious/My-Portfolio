@@ -26,7 +26,7 @@ const AboutMe = () => {
         <p>As a seasoned front-end developer specializing in HTML, CSS, JavaScript, and React, I bring a comprehensive skill set to web development. My expertise encompasses crafting clean and semantic HTML, employing advanced CSS techniques for responsive and visually appealing designs, and building dynamic interfaces with JavaScript, utilizing modern frameworks like React. </p>
         <p>With a user-centric focus, I prioritize creating intuitive and engaging experiences, incorporating feedback to iteratively enhance designs. A collaborative team player, I communicate effectively with designers, back-end developers, and stakeholders to translate concepts into functional code.  </p>
         <p> Committed to continuous learning, I stay updated on emerging technologies, ensuring my work remains cutting-edge and adaptable in the ever-evolving landscape of web development. My goal is to contribute to projects that not only meet technical requirements but also surpass user expectations, leaving a lasting impact in the digital sphere.</p>
-        <a href="#" className="resume">Download Resume</a>
+        <a href="https://google.com" className="resume">Download Resume</a>
     </>
   )
 }

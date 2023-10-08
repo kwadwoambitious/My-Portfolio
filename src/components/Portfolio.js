@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import React, { useState } from 'react';
-import { FaChevronUp, FaTimes } from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 import project1 from '../components/images/projects/project-1.png';
 import project2 from '../components/images/projects/project-2.png';
 import project3 from '../components/images/projects/project-3.png';

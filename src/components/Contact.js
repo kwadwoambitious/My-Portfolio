@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import { FaTwitter, FaLinkedin, FaGithub, FaChevronUp  } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaGithub  } from "react-icons/fa";
 import { LuShare } from 'react-icons/lu';
 
 const Socials = () => {

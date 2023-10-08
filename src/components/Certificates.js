@@ -8,11 +8,6 @@ import { motion } from 'framer-motion';
 const Certificates = () => {
   return (
     <>
-      <a href="#">
-            <div className="chevronup-container">
-              <FaChevronUp className="chevronup-icon"/>
-            </div>
-      </a>
       <motion.div 
         initial={{ x: '100vw' }}
         animate={{ x: 0 }}

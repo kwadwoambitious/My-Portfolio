@@ -15,7 +15,6 @@ import basketballImg from '../components/images/interests/basketball.svg';
 import moviesImg from '../components/images/interests/movies.svg';
 import programmingImg from '../components/images/interests/programming.svg';
 import peaceImg from '../components/images/interests/calm-atmosphere.svg';
-import { FaChevronUp } from "react-icons/fa";
 
 const AboutMe = () => {
   return(

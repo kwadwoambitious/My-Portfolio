@@ -63,6 +63,10 @@ const Skills = () => {
           <img src={githubImg} alt="github logo"/>
           <p>GitHub</p>
         </div>
+        <div>
+          <img src={vscodeImg} alt="vscode logo"/>
+          <p>VsCode</p>
+        </div>
       </div>
     </>
   )

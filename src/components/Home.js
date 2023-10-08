@@ -6,8 +6,8 @@ function Home() {
   return (
     <>
         <motion.div
-            // initial={{ x: '100vw' }}
-            // animate={{ x: 0 }}
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
             // transition={{ type: 'spring', stiffness: 100 }}
             
             className="home">

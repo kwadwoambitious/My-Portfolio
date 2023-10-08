@@ -6,7 +6,7 @@ import javascriptImg from '../images/skills/javascript.png';
 import bootstrapImg from '../images/skills/bootstrap.png';
 import gitImg from '../images/skills/git.png';
 import githubImg from '../images/skills/github.png';
-
+import reactImg from '../images/skills/reactjs.svg';
 import vscodeImg from '../images/skills/vscode.svg';
 import writingImg from '../components/images/interests/writing.svg';
 import musicImg from '../components/images/interests/music.svg';

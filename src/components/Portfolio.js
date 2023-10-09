@@ -10,7 +10,7 @@ import javascriptImg from '../images/skills/javascript.png';
 
 
 const Portfolio = () => {
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
   const [modal2, setModal2] = useState(false);
   const [modal3, setModal3] = useState(false);
 

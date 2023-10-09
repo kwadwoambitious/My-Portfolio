@@ -127,8 +127,8 @@ const About = () => {
   return (
     <>
       <motion.div 
-        initial={{ scaleX: 0 }}
-        animate={{ scaleX: 1 }}
+        // initial={{ x: '100vw' }}
+        // animate={{ x: 0 }}
         // transition={{ type: 'spring', stiffness: 100 }}
 
         className='about-container'>

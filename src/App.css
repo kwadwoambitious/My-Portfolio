@@ -275,27 +275,63 @@ nav ul li{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
-  background: #f1f1f1;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.614);
   padding: 30px 28px;
   border-radius: 3px;
   max-width: 600px;
   width: 100%;
+  height: 80%;
   position: relative;
+  overflow-y: auto;
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid white;
+}
+.modal h1{
+  margin-bottom: 15px;
 }
 .modal h2{
-  color: #0164d5;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+.modal > img{
+  max-width: 400px;
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 .modal p{
-  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.modal a{
+  text-decoration: none;
+  color: #0164d5;
+  transition: color 0.2s ease-in-out;
+}
+.modal a:hover{
+  color: white;
+}
+.modal li{
+  margin-left: 20px;
+  color: #8a8a8a;
+  font-style: italic;
+  line-height: 2;
+}
+.modal li:last-of-type{
+  margin-bottom: 10px;
 }
 .close-modal {
   position: absolute;
   top: 10px;
   right: 10px;
   cursor: pointer;
-  color: #0164d5;
   font-size: 1.5em;
+}
+.modal .skill-content{
+  margin-top: 25px;
 }
 body.active-modal {
   overflow-y: hidden;

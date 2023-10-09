@@ -4,9 +4,13 @@ import { FaTimes } from 'react-icons/fa';
 import project1 from '../components/images/projects/project-1.png';
 import project2 from '../components/images/projects/project-2.png';
 import project3 from '../components/images/projects/project-3.png';
+import htmlImg from '../images/skills/html.png';
+import cssImg from '../images/skills/css.png';
+import javascriptImg from '../images/skills/javascript.png';
+
 
 const Portfolio = () => {
-  const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState(true);
   const [modal2, setModal2] = useState(false);
   const [modal3, setModal3] = useState(false);
 
@@ -47,7 +51,14 @@ const Portfolio = () => {
           exit={{ y: '100vh', opacity: 0 }}
           
           className='modal'>
-          <h2>Hello Modal 1</h2>
+          <h1>Original Trombones</h1>
+          <img src={project1} alt='project-1' onClick={toggleModal} />
+              <h2>PROJECT INFO</h2>
+              <p>
+                <li><b>Project URL: </b><a href="#" target='_blank' rel='noreferrer'>Original Trombones</a></li>
+                <li><b>Date created: </b>Mar 2023</li>
+              </p>
+              <h2>SUMMARY</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
                 perferendis suscipit officia recusandae, eveniet quaerat assumenda
@@ -56,6 +67,21 @@ const Portfolio = () => {
                 quaerat ipsum quos molestiae rem aspernatur dicta tenetur. Sunt
                 placeat tempora vitae enim incidunt porro fuga ea.
               </p>
+              <h2>STACK USED</h2>
+              <div className="skill-content">
+              <div>
+                <img src={htmlImg} alt="html logo"/>
+                <p>HTML</p>
+              </div>
+              <div>
+                <img src={cssImg} alt="css logo"/>
+                <p>CSS</p>
+              </div>
+              <div>
+                <img src={javascriptImg} alt="javascript logo"/>
+                <p>JavaScript</p>
+              </div>
+      </div>
               <FaTimes className="close-modal" onClick={toggleModal} />
           </motion.div>
         </motion.div>

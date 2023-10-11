@@ -30,6 +30,27 @@ const Certificates = () => {
             <a href="https://www.sololearn.com/Certificate/CT-Y4HSQYNM/png"><img src={htmlCourse} alt="html course" /></a>
           </div>
         </div> */}
+
+        <div className="timeline">
+          <div className="checkpoint">
+            <div>
+              <h2>First Certificate</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus assumenda quos hic! Qui, mollitia distinctio.</p>
+            </div>
+          </div>
+          <div className="checkpoint">
+            <div>
+              <h2>Second Certificate</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus assumenda quos hic! Qui, mollitia distinctio.</p>
+            </div>
+          </div>
+          <div className="checkpoint">
+            <div>
+              <h2>Third Certificate</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus assumenda quos hic! Qui, mollitia distinctio.</p>
+            </div>
+          </div>
+        </div>
       </motion.div>
     </>
   )

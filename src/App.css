@@ -8,7 +8,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background-image: url('./images/bg-img.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.35)) ,url('./images/bg-img.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

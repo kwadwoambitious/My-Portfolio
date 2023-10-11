@@ -385,7 +385,7 @@ body.active-modal {
 	position: absolute;
 	width: 2px;
 	height: 100%;
-	background-color: #2f363e;
+	background-color: white;
 	left: calc(50% - 1px);
 }
 .timeline-item{
@@ -397,11 +397,11 @@ body.active-modal {
 	margin-bottom: 0;
 }
 .timeline-item:nth-child(odd){
-    padding-right: calc(50% + 30px);
+  padding-right: calc(50% + 30px);
 	text-align: right;
 }
 .timeline-item:nth-child(even){
-    padding-left: calc(50% + 30px);
+  padding-left: calc(50% + 30px);
 }
 .timeline-dot{
 	height: 16px;
@@ -418,12 +418,12 @@ body.active-modal {
 	margin:6px 0 15px;
 }
 .timeline-content{
-    background-color: #2f363e;
+  background-color: #0164d5d6;
 	padding: 30px;
 	border-radius: 5px;
 }
 .timeline-content h3{
-    font-size: 20px;
+  font-size: 20px;
 	color: #ffffff;
 	margin:0 0 10px;
 	text-transform: capitalize;

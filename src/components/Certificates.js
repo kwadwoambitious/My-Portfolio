@@ -16,7 +16,7 @@ const Certificates = () => {
         className="awards-container">
         <h4>CERTIFICATES</h4>
         <h2>MY CERTIFICATES</h2>
-        <div className="certs">
+        {/* <div className="certs">
           <div>
             <a href="https://www.freecodecamp.org/certification/antwiebenezer/responsive-web-design"><img src={webDesign} alt="web design course1" /></a>  
           </div>
@@ -29,7 +29,7 @@ const Certificates = () => {
           <div>
             <a href="https://www.sololearn.com/Certificate/CT-Y4HSQYNM/png"><img src={htmlCourse} alt="html course" /></a>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </>
   )

@@ -376,7 +376,7 @@ body.active-modal {
   position: relative;
 }
 .checkpoint div{
-  border: 2px solid #888;
+  border: 1px solid #888;
   border-radius: 1em;
   padding: 1.5em
 }
@@ -385,12 +385,12 @@ body.active-modal {
   color: #ccc;
 }
 .checkpoint:nth-child(odd){
-  border-right: 3px solid #888;
+  border-right: 1px solid #888;
   padding-right: 3em;
   transform: translateX(-17em);
 }
 .checkpoint:nth-child(even){
-  border-left: 3px solid #888;
+  border-left: 1px solid #888;
   padding-left: 3em;
   transform: translateX(17em);
 }
@@ -530,6 +530,7 @@ form input[type="submit"]:hover{
 @media screen and (max-width: 1150px){
   .timeline{
     width: 80vw;
+    margin: 3em auto;
   }
   .timeline .checkpoint{
     width: 100%;

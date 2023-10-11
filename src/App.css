@@ -370,7 +370,6 @@ body.active-modal {
   overflow-y: hidden;
 }
 .timeline-section{
-	background-color: #24292d;
 	min-height: 100vh;
 	padding: 10px 15px;
 }

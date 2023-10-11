@@ -419,7 +419,7 @@ body.active-modal {
 }
 .timeline-content{
   background-color: #d434fed6;
-	padding: 30px;
+	padding: 20px;
 	border-radius: 5px;
 }
 .timeline-content h3{
@@ -434,15 +434,17 @@ body.active-modal {
 	line-height: 1.5;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif; 
+  text-align: justify;
 }
 .timeline-content a{
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
   background-color: white;
   color: #d434fe;
-  font-weight: bold;
+  font-size: 1.1em;
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
+  margin-top: 20px;
+  padding: 8px 17px;
   border-radius: 30px;
   border: 1px solid white;
   transition: 0.2s ease-in-out;

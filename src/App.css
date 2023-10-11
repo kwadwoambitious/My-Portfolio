@@ -389,7 +389,7 @@ body.active-modal {
 	left: calc(50% - 1px);
 }
 .timeline-item{
-	margin-bottom: 40px;
+	margin-bottom: 15px;
 	width: 100%;
 	position: relative;
 }

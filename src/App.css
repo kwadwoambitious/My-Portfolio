@@ -36,13 +36,13 @@ header{
 .logo .icon{
   font-size: 29px;
   margin-right: 5px;
-  color: #e55604;
+  color: #d434fe;
 }
 .logo a{
   text-decoration: none;
 }
 .logo h1{
-  color: #e55604;
+  color: #d434fe;
   font-family: 'Dancing Script', cursive;
 }
 .logo h1 span{
@@ -79,7 +79,7 @@ nav ul li{
 .nav-link::after{
   content: '';
   position: absolute;
-  background-color: #e55604;
+  background-color: #d434fe;
   width: 0;
   height: 2px;
   left: 0;
@@ -95,7 +95,7 @@ nav ul li{
 .active::after{
   content: '';
   position: absolute;
-  background-color: #e55604;
+  background-color: #d434fe;
   width: 50%;
   height: 2px;
   left: 0;
@@ -119,8 +119,8 @@ nav ul li{
   line-height: 2;
 }
 .home h2 span{
-  color: #e55604;
-  border-bottom: 3px solid #e55604;
+  color: #d434fe;
+  border-bottom: 3px solid #d434fe;
   padding-bottom: 5px;
 }
 .social-icons{
@@ -141,7 +141,7 @@ nav ul li{
   transition: 0.2s ease-in-out;
 }
 .social-icons a:hover{
-  background-color: #e55604;
+  background-color: #d434fe;
   color: white;
 }
 .about-container, .portfolio-container, .awards-container, .contact-container{
@@ -167,7 +167,7 @@ nav ul li{
   height: 2px;
   top: 50%;
   margin-left: 20px;
-  background-color: #e55604;
+  background-color: #d434fe;
 }
 .about-container > h2, .portfolio-container h2, .awards-container h2, .contact-container h2{
   font-size: 2.5em;
@@ -175,7 +175,7 @@ nav ul li{
   font-weight: 700;
 }
 .about-container > h3{
-  color: #e55604;
+  color: #d434fe;
   font-size: 1.7em;
   font-family: 'Raleway', sans-serif;
 }
@@ -189,13 +189,13 @@ nav ul li{
   display: inline-block;
   margin-top: 15px;
   color: white;
-  background-color: #e55604af;
+  background-color: #d434feaf;
   padding: 15px;
   border-radius: 5px;
   text-decoration: none;
 }
 .resume:hover{
-  background-color: #e55604;
+  background-color: #d434fe;
 }
 .title{
   margin-top: 60px;
@@ -284,7 +284,7 @@ nav ul li{
   color: white;
   font-size: 1.2em;
   text-decoration: none;
-  background-color: #e55604;
+  background-color: #d434fe;
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
@@ -292,7 +292,7 @@ nav ul li{
   margin-right: 15px;
 }
 .cover a:hover, .cover p:hover{
-  background-color: #e55604af;
+  background-color: #d434feaf;
 }
 .modal-overlay {
   position: fixed;
@@ -341,7 +341,7 @@ nav ul li{
 }
 .modal a{
   text-decoration: none;
-  color: #e55604;
+  color: #d434fe;
   transition: color 0.2s ease-in-out;
 }
 .modal a:hover{
@@ -406,7 +406,7 @@ body.active-modal {
 .timeline-dot{
 	height: 16px;
 	width: 16px;
-	background-color: #e55604;
+	background-color: #d434fe;
 	position: absolute;
 	left: calc(50% - 8px);
 	border-radius: 50%;
@@ -414,11 +414,11 @@ body.active-modal {
 }
 .timeline-date{
 	font-size: 18px;
-	color: #e55604;
+	color: #d434fe;
 	margin:6px 0 15px;
 }
 .timeline-content{
-  background-color: #e55604d6;
+  background-color: #d434fed6;
 	padding: 30px;
 	border-radius: 5px;
 }
@@ -526,7 +526,7 @@ body.active-modal {
   max-width: 500px;
   width: 100%;
   object-fit: cover;
-  border: 3px solid #e55604;
+  border: 3px solid #d434fe;
   border-radius: 5px;
 } */
 .socials-content{
@@ -550,7 +550,7 @@ body.active-modal {
 }
 .shareImg{
   font-size: 30px;
-  color: #e55604;
+  color: #d434fe;
 }
 .socials-content h3{
   font-size: 1.4em;
@@ -569,7 +569,7 @@ body.active-modal {
   transition: 0.2s ease-in-out;
 }
 .socials-content a:hover{
-  color: #e55604;
+  color: #d434fe;
 }
 form{
   margin-top: 40px;
@@ -607,13 +607,13 @@ form input[type="submit"]{
   width: 200px;
   margin: 0 auto;
   font-size: 1.2em;
-  background-color: #e55604af;
+  background-color: #d434feaf;
   transition: 0.2s ease-in-out;
   cursor: pointer;
   border-radius: 10px;
 }
 form input[type="submit"]:hover{
-  background-color: #e55604;
+  background-color: #d434fe;
 }
 @media screen and (max-width: 1150px){
   .timeline{

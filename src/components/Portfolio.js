@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import React, { useState } from 'react';
-import { FaTimes } from 'react-icons/fa';
+import { LuX } from 'react-icons/lu';
 import project1 from '../components/images/projects/project-1.png';
 import project2 from '../components/images/projects/project-2.png';
 import project3 from '../components/images/projects/project-3.png';
@@ -9,10 +9,45 @@ import cssImg from '../images/skills/css.png';
 import javascriptImg from '../images/skills/javascript.png';
 
 
+
 const Portfolio = () => {
+  const overlay = {
+    hidden: {
+      opacity: 0
+    },
+    visible: {
+      opacity: 1
+    },
+    exit: {
+      opacity: 0
+    }
+  }
+  const myModal = {
+    hidden: {
+      y: '-100vh', 
+      opacity: 0,
+    },
+    visible: {
+      y: '-50%', 
+      opacity: 1, 
+      x: '-50%',
+      transition: {
+        delay: 0.3,
+        ease: 'easeInOut',
+      },
+    },
+    exit: {
+      y: '100vh',
+      opacity: 0,
+    }
+  }
+
   const [modal, setModal] = useState(false);
   const [modal2, setModal2] = useState(false);
   const [modal3, setModal3] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
+  const [isHovering2, setIsHovering2] = useState(false);
+  const [isHovering3, setIsHovering3] = useState(false);
 
   const toggleModal = () => {
     setModal(!modal);
@@ -26,6 +61,30 @@ const Portfolio = () => {
     setModal3(!modal3);
   }
 
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  }
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  }
+
+  const handleMouseOver2 = () => {
+    setIsHovering2(true);
+  }
+
+  const handleMouseOut2 = () => {
+    setIsHovering2(false);
+  }
+
+  const handleMouseOver3 = () => {
+    setIsHovering3(true);
+  }
+
+  const handleMouseOut3 = () => {
+    setIsHovering3(false);
+  }
+
   if(modal || modal2 || modal3){
     document.body.classList.add('active-modal');
   }
@@ -35,30 +94,31 @@ const Portfolio = () => {
 
   return (
     <>
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         {modal && (
           <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          variants={overlay}
+          initial='hidden'
+          animate='visible'
+          exit='exit'
           
           className="modal-overlay">
 
           <motion.div 
-          initial={{ y: '-100vh', opacity: 0 }}
-          animate={{ y: '-50%', opacity: 1, x: '-50%' }}
-          transition={{ delay: 0.5 }}
-          exit={{ y: '100vh', opacity: 0 }}
+          variants={myModal}
+          initial='hidden'
+          animate='visible'
+          exit='exit'
           
           className='modal'>
           <h1>Original Trombones</h1>
           <img src={project1} alt='project-1' onClick={toggleModal} />
               <h2>PROJECT INFO</h2>
               <p>
-                <li><b>Project URL: </b><a href="#" target='_blank' rel='noreferrer'>Original Trombones</a></li>
+                <li><b>Project URL: </b><a href="https://linkedin.com" target='_blank' rel='noreferrer'>Original Trombones</a></li>
                 <li><b>Date created: </b>Mar 2023</li>
               </p>
-              <h2>SUMMARY</h2>
+              <h2>ABOUT PROJECT</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
                 perferendis suscipit officia recusandae, eveniet quaerat assumenda
@@ -82,26 +142,27 @@ const Portfolio = () => {
                 <p>JavaScript</p>
               </div>
       </div>
-              <FaTimes className="close-modal" onClick={toggleModal} />
+              <LuX className="close-modal" onClick={toggleModal} />
           </motion.div>
         </motion.div>
         )}
       </AnimatePresence>
 
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         {modal2 && (
           <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          variants={overlay}
+          initial='hidden'
+          animate='visible'
+          exit='exit'
           
           className="modal-overlay">
 
           <motion.div 
-          initial={{ y: '-100vh', opacity: 0 }}
-          animate={{ y: '-50%', opacity: 1, x: '-50%' }}
-          transition={{ delay: 0.5 }}
-          exit={{ y: '-100vh' }}
+          variants={myModal}
+          initial='hidden'
+          animate='visible'
+          exit='exit'
           
           className='modal'>
           <h2>Hello Modal 2</h2>
@@ -113,25 +174,26 @@ const Portfolio = () => {
                 quaerat ipsum quos molestiae rem aspernatur dicta tenetur. Sunt
                 placeat tempora vitae enim incidunt porro fuga ea.
               </p>
-              <FaTimes className="close-modal" onClick={toggleModal2} />
+              <LuX className="close-modal" onClick={toggleModal2} />
           </motion.div>
         </motion.div>
         )}
       </AnimatePresence>    
 
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         {modal3 && (
           <motion.div className="modal-overlay"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          variants={overlay}
+          initial='hidden'
+          animate='visible'
+          exit='exit'
           >
 
           <motion.div className='modal'
-          initial={{ y: '-100vh', opacity: 0 }}
-          animate={{ y: '-50%', opacity: 1, x: '-50%' }}
-          transition={{ delay: 0.5 }}
-          exit={{ y: '-100vh' }}
+          variants={myModal}
+          initial='hidden'
+          animate='visible'
+          exit='exit'
           >
           <h2>Hello Modal 3</h2>
               <p>
@@ -142,7 +204,7 @@ const Portfolio = () => {
                 quaerat ipsum quos molestiae rem aspernatur dicta tenetur. Sunt
                 placeat tempora vitae enim incidunt porro fuga ea.
               </p>
-              <FaTimes className="close-modal" onClick={toggleModal3} />
+              <LuX className="close-modal" onClick={toggleModal3} />
           </motion.div>
         </motion.div>
         )}
@@ -158,14 +220,68 @@ const Portfolio = () => {
         <h2>MY PROJECTS</h2>
         <div className="projects-container">
           <div>
-             <img src={project1} alt='project-1' onClick={toggleModal} />
+               <div className='wrapper' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+                  <img src={project1} alt='project-1'  />
+                  <AnimatePresence>
+                      {isHovering && (
+                        <motion.div className='cover' 
+                            initial={{ x: '-100%' }}
+                            animate={{ x: 0 }}
+                            transition={{ type: 'tween', ease: 'easeInOut' }}
+                            exit={{ x: '-100%' }}
+                        >
+                              <h1>Project Name 1</h1>
+                              <div>
+                                <p onClick={toggleModal}>Info</p>
+                                <a href='https://unsplash.com' rel='noreferrer'>Github</a>
+                              </div>
+                        </motion.div>
+                      )}
+                  </AnimatePresence>
+               </div>
           </div>
           <div>
-             <img src={project2} alt='project-2' onClick={toggleModal2} />
-          </div>
+                <div className='wrapper' onMouseOver={handleMouseOver2} onMouseOut={handleMouseOut2}>
+                        <img src={project2} alt='project-2'  />
+                        <AnimatePresence>
+                          {isHovering2 && (
+                            <motion.div className='cover' 
+                                initial={{ x: '-100%' }}
+                                animate={{ x: 0 }}
+                                transition={{ type: 'tween', ease: 'easeInOut' }}
+                                exit={{ x: '-100%' }}
+                            >
+                                  <h1>Project Name 2</h1>
+                                  <div>
+                                    <p onClick={toggleModal2}>Info</p>
+                                    <a href='https://pexel.com' rel='noreferrer'>Github</a>
+                                  </div>
+                            </motion.div>
+                          )}
+                  </AnimatePresence>
+                    </div>
+                </div>
           <div>
-             <img src={project3} alt='project-3' onClick={toggleModal3} />
-          </div>
+                <div className='wrapper' onMouseOver={handleMouseOver3} onMouseOut={handleMouseOut3}>
+                        <img src={project3} alt='project-3'  />
+                        <AnimatePresence>
+                          {isHovering3 && (
+                            <motion.div className='cover' 
+                                initial={{ x: '-100%' }}
+                                animate={{ x: 0 }}
+                                transition={{ type: 'tween', ease: 'easeInOut' }}
+                                exit={{ x: '-100%' }}
+                            >
+                                  <h1>Project Name 3</h1>
+                                  <div>
+                                    <p onClick={toggleModal3}>Info</p>
+                                    <a href='https://pexel.com' rel='noreferrer'>Github</a>
+                                  </div>
+                            </motion.div>
+                          )}
+                  </AnimatePresence>
+                    </div>
+                </div>
         </div>
       </motion.div>
     </>

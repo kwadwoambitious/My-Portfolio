@@ -406,7 +406,7 @@ body.active-modal {
 .timeline-dot{
 	height: 16px;
 	width: 16px;
-	background-color: #eaa023;
+	background-color: #0164d5;
 	position: absolute;
 	left: calc(50% - 8px);
 	border-radius: 50%;
@@ -414,7 +414,7 @@ body.active-modal {
 }
 .timeline-date{
 	font-size: 18px;
-	color: #eaa023;
+	color: #0164d5;
 	margin:6px 0 15px;
 }
 .timeline-content{

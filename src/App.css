@@ -365,7 +365,70 @@ nav ul li{
 body.active-modal {
   overflow-y: hidden;
 }
-.certs{
+.timeline{
+  margin: 2em auto;
+  max-width: 34.15em;
+}
+.checkpoint{
+  max-width: 34em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  position: relative;
+}
+.checkpoint div{
+  border: 2px solid #888;
+  border-radius: 1em;
+  padding: 1.5em
+}
+.checkpoint p{
+  line-height: 27px;
+  color: #ccc;
+}
+.checkpoint:nth-child(odd){
+  border-right: 3px solid #888;
+  padding-right: 3em;
+  transform: translateX(-17em);
+}
+.checkpoint:nth-child(even){
+  border-left: 3px solid #888;
+  padding-left: 3em;
+  transform: translateX(17em);
+}
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before{
+  content: '';
+  background: #888;
+  width: 3em;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.checkpoint:nth-child(odd)::before{
+  right: 0;
+}
+.checkpoint:nth-child(even)::before{
+  left: 0;
+}
+.checkpoint:nth-child(odd) div:before,
+.checkpoint:nth-child(even) div:before{
+  content: '';
+  background: #fff;
+  box-shadow: 0 0 0.5em #0d71fc;
+  width: 0.8em;
+  height: 0.8em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.checkpoint:nth-child(odd) div::before{
+  right: -0.5em;
+}
+.checkpoint:nth-child(even) div::before{
+  left: -0.5em;
+}
+/* .certs{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, auto));
   justify-content: center;
@@ -377,7 +440,7 @@ body.active-modal {
   object-fit: cover;
   border: 3px solid #0164d5;
   border-radius: 5px;
-}
+} */
 .socials-content{
   display: flex;
   align-items: center;
@@ -463,6 +526,30 @@ form input[type="submit"]{
 }
 form input[type="submit"]:hover{
   background-color: #0164d5;
+}
+@media screen and (max-width: 1150px){
+  .timeline{
+    width: 80vw;
+  }
+  .timeline .checkpoint{
+    width: 100%;
+    transform: none;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+  }
+  .timeline .checkpoint::before{
+    width: 3px;
+    height: 4em;
+    top: -2em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .timeline .checkpoint div::before{
+    top: -0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 @media (max-width: 970px){
   header{

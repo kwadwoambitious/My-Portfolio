@@ -58,7 +58,7 @@ const Certificates = () => {
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2015</div>
                 <div class="timeline-content">
-                  <h3>timeline item title</h3>
+                  <h3>PROGRAMMING WITH JAVASCRIPT</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </div>
               </div>
@@ -66,7 +66,7 @@ const Certificates = () => {
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2016</div>
                 <div class="timeline-content">
-                  <h3>timeline item title</h3>
+                  <h3>RESPONSIVE WEB DESIGN</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </div>
               </div>
@@ -74,7 +74,7 @@ const Certificates = () => {
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2017</div>
                 <div class="timeline-content">
-                  <h3>timeline item title</h3>
+                  <h3>RESPONSIVE WEB DESIGN</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </div>
               </div>
@@ -82,31 +82,7 @@ const Certificates = () => {
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2018</div>
                 <div class="timeline-content">
-                  <h3>timeline item title</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2019</div>
-                <div class="timeline-content">
-                  <h3>timeline item title</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2020</div>
-                <div class="timeline-content">
-                  <h3>timeline item title</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2021</div>
-                <div class="timeline-content">
-                  <h3>timeline item title</h3>
+                  <h3>HTML</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </div>
               </div>

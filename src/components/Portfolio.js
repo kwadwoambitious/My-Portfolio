@@ -230,7 +230,7 @@ const Portfolio = () => {
                             transition={{ type: 'tween', ease: 'easeInOut' }}
                             exit={{ x: '-100%' }}
                         >
-                              <h1>Project Name 1</h1>
+                              <h1>ORIA</h1>
                               <div>
                                 <p onClick={toggleModal}>Info</p>
                                 <a href='https://unsplash.com' rel='noreferrer'>Github</a>
@@ -251,7 +251,7 @@ const Portfolio = () => {
                                 transition={{ type: 'tween', ease: 'easeInOut' }}
                                 exit={{ x: '-100%' }}
                             >
-                                  <h1>Project Name 2</h1>
+                                  <h1>ROXY</h1>
                                   <div>
                                     <p onClick={toggleModal2}>Info</p>
                                     <a href='https://pexel.com' rel='noreferrer'>Github</a>

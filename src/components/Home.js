@@ -12,8 +12,11 @@ function Home() {
           <meta property='og:title' content='Ebenezer Antwi | Front-end Developer' />
           <meta property='og:description' content='The landing page of my official portfolio website.' />
           <meta property='og:type' content='Portfolio Website' />
-          <meta property='og:image' content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
-          <meta name="twitter:card" content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
+          <meta property='og:image' content='./images/og-image.jpg' />
+          <meta property="og:image:type" content="image/jpg" />
+          <meta property="og:image:width" content="300" />
+          <meta property="og:image:height" content="300" />
+          <meta name="twitter:card" content='./images/og-image.jpg' />
           <link rel='canonical' href='/' />
         </Helmet>
         <motion.div

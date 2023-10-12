@@ -32,7 +32,7 @@ const Certificates = () => {
                   <a href='https://www.freecodecamp.org/certification/antwiebenezer/responsive-web-design' target='_blank' rel='noreferrer'>CHECK IT</a>
                 </div>
               </div>
-              <div class="timeline-item">
+              {/* <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">July 2022</div>
                 <div class="timeline-content">
@@ -40,13 +40,13 @@ const Certificates = () => {
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                   <a href='https://www.sololearn.com/Certificate/CT-KHVQLLZH/png' target='_blank' rel='noreferrer'>CHECK IT</a>
                 </div>
-              </div>
+              </div> */}
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">May 2021</div>
                 <div class="timeline-content">
                   <h3>HTML</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                  <p>I wanted to learn web development, so I inquired about it and became aware that HTML plays a significant role in the field. A friend introduced me to a mobile app called <span>Sololearn</span> that teaches this course. The app demonstrated what it takes to structure a web page, and through it, I studied the basic elements to construct a page.</p>
                   <a href='https://www.sololearn.com/Certificate/CT-Y4HSQYNM/png' target='_blank' rel='noreferrer'>CHECK IT</a>
                 </div>
               </div>

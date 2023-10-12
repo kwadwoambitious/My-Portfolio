@@ -254,15 +254,24 @@ nav ul li{
   gap: 50px;
   justify-content: center;
 }
-.projects-container img, .cover{
+.wrapper > h1, .cover{
   max-width: 500px;
   width: 100%;
-  height: 250px;
-  object-fit: cover;
+  height: 100%;
 }
 .wrapper{
   position: relative;
   overflow: hidden;
+  background-color: #0164d5;
+  padding: 20px;
+  height: 300px;
+}
+.wrapper > h1{
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .cover{
   position: absolute;
@@ -274,6 +283,7 @@ nav ul li{
   justify-content: center;
   flex-direction: column;
   gap: 30px;
+  border: 1px solid white;
 }
 .cover a, .cover p{
   color: white;

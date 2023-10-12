@@ -265,6 +265,7 @@ nav ul li{
   background-color: #0164d5;
   padding: 20px;
   height: 300px;
+  border-radius: 5px;
 }
 .wrapper > h1{
   font-size: 2em;
@@ -272,6 +273,7 @@ nav ul li{
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 .cover{
   position: absolute;

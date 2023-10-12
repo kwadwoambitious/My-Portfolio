@@ -17,7 +17,7 @@ function Home() {
             // transition={{ type: 'spring', stiffness: 100 }}
             
             className="home">
-          <h2>Ebenezer Antwi</h2>
+          <h2 className='my-name'>Ebenezer Antwi</h2>
           <h2>I'm a <span>Front-end Developer</span></h2>
             <div className='social-icons'>
                     <a href="https://twitter.com/_antwiebenezer" target='_blank' rel='noreferrer'><FaTwitter className='icon'/></a>

@@ -418,7 +418,9 @@ body.active-modal {
 	margin:6px 0 15px;
 }
 .timeline-content{
-  background-color: #d434fed6;
+  /* background-color: #d434fed6; */
+  border: 1px solid #d434fe;
+  border-radius: 5px;
 	padding: 20px;
 	border-radius: 5px;
 }

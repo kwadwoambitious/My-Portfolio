@@ -6,7 +6,14 @@ import { Helmet } from 'react-helmet-async';
 function Home() {
   return (
     <>
-        <Helmet>
+        <motion.div
+            // initial={{ x: '100vw' }}
+            // animate={{ x: 0 }}
+            // transition={{ type: 'spring', stiffness: 100 }}
+            
+            className="home">
+
+<Helmet>
           
           {/* <!-- HTML Meta Tags --> */}
           <title>Ebenezer Antwi | Front-end Developer</title>
@@ -28,12 +35,7 @@ function Home() {
           <meta name="twitter:image" content="" />
           <link rel='canonical' href='/' />
         </Helmet>
-        <motion.div
-            // initial={{ x: '100vw' }}
-            // animate={{ x: 0 }}
-            // transition={{ type: 'spring', stiffness: 100 }}
             
-            className="home">
           <h2 className='my-name'>Ebenezer Antwi</h2>
           <h2>I'm a <span>Front-end Developer</span></h2>
             <div className='social-icons'>

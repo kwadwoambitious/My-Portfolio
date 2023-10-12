@@ -370,7 +370,7 @@ body.active-modal {
   overflow-y: hidden;
 }
 .timeline-section{
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	padding: 10px 15px;
 }
 .timeline-items{
@@ -425,8 +425,8 @@ body.active-modal {
 	border-radius: 5px;
 }
 .timeline-content h3{
-  font-size: 20px;
-	color: #ffffff;
+  font-size: 23px;
+	color: #d434fe;
 	margin:0 0 10px;
 	text-transform: capitalize;
 	font-weight: 500;
@@ -435,8 +435,12 @@ body.active-modal {
   color: white;
 	line-height: 1.5;
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif; 
+  font-family: 'Open Sans', sans-serif;
   text-align: justify;
+}
+.timeline-content p span{
+  font-style: italic;
+  font-weight: bold;
 }
 .timeline-content a{
   font-family: 'Raleway', sans-serif;
@@ -603,6 +607,9 @@ form input[type="submit"]:hover{
 	.timeline-dot{
 		left:0;
 	}
+  .timeline-item{
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 600px){
   .about-container, .contact-container, .portfolio-container, .awards-container{
@@ -642,6 +649,9 @@ form input[type="submit"]:hover{
   form{
     padding: 15px;
   }
+  .timeline-content p{
+    text-align: left;
+  }
 }
 @media (max-width: 350px){
   .resume{
@@ -652,5 +662,8 @@ form input[type="submit"]:hover{
   }
   .interest-content{
     grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+  }
+  .timeline-content h3{
+    font-size: 19px;
   }
 }

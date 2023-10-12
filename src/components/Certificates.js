@@ -25,7 +25,7 @@ const Certificates = () => {
               </div>
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <div class="timeline-date">2016</div>
+                <div class="timeline-date">May 2023</div>
                 <div class="timeline-content">
                   <h3>RESPONSIVE WEB DESIGN</h3>
                   <p>Building projects that were not responsive was giving me a headache. So, I decided to find an online course that would help me solve these issues. I got to know about this course offered by <span>freeCodeCamp</span> from a friend. I learned the best way to make my projects very responsive on various screen sizes. During this course, I was given five different projects to work on, and they were completed successfully.</p>
@@ -34,7 +34,7 @@ const Certificates = () => {
               </div>
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <div class="timeline-date">2017</div>
+                <div class="timeline-date">July 2022</div>
                 <div class="timeline-content">
                   <h3>RESPONSIVE WEB DESIGN</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -43,7 +43,7 @@ const Certificates = () => {
               </div>
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <div class="timeline-date">2018</div>
+                <div class="timeline-date">May 2021</div>
                 <div class="timeline-content">
                   <h3>HTML</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>

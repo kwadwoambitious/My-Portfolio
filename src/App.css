@@ -33,11 +33,6 @@ header{
   display: flex;
   align-items: center;
 }
-.logo .icon{
-  font-size: 29px;
-  margin-right: 5px;
-  color: #d434fe;
-}
 .logo a{
   text-decoration: none;
 }

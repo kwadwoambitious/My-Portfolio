@@ -221,7 +221,7 @@ const Portfolio = () => {
         <div className="projects-container">
           <div>
                <div className='wrapper' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                  <img src={project1} alt='project-1'  />
+                  <h1>ORIA CHARITY FOUNDATION</h1>
                   <AnimatePresence>
                       {isHovering && (
                         <motion.div className='cover' 
@@ -242,7 +242,7 @@ const Portfolio = () => {
           </div>
           <div>
                 <div className='wrapper' onMouseOver={handleMouseOver2} onMouseOut={handleMouseOut2}>
-                        <img src={project2} alt='project-2'  />
+                        <h1>ROXY</h1>
                         <AnimatePresence>
                           {isHovering2 && (
                             <motion.div className='cover' 
@@ -263,7 +263,7 @@ const Portfolio = () => {
                 </div>
           <div>
                 <div className='wrapper' onMouseOver={handleMouseOver3} onMouseOut={handleMouseOut3}>
-                        <img src={project3} alt='project-3'  />
+                        <h1>NICE</h1>
                         <AnimatePresence>
                           {isHovering3 && (
                             <motion.div className='cover' 

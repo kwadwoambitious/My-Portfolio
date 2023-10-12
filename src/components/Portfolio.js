@@ -4,6 +4,7 @@ import { LuX } from 'react-icons/lu';
 import htmlImg from '../images/skills/html.png';
 import cssImg from '../images/skills/css.png';
 import javascriptImg from '../images/skills/javascript.png';
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -77,6 +78,12 @@ const Portfolio = () => {
 
   return (
     <>
+      <Helmet>
+          <title>Portfolio | Ebenezer Antwi</title>
+          <meta name='description' content='Portfolio Page' />
+          <link rel='canonical' href='/portfolio' />
+      </Helmet>
+
       <AnimatePresence>
         {modal && (
         <motion.div 
@@ -182,7 +189,7 @@ const Portfolio = () => {
         <div className="projects-container">
           <div>
               <div className='wrapper' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                  <h1>ORIA CHARITY FOUNDATION</h1>
+                  <h2>ORIA CHARITY FOUNDATION</h2>
                   <AnimatePresence>
                       {isHovering && (
                         <motion.div className='cover' 
@@ -202,7 +209,7 @@ const Portfolio = () => {
           </div>
           <div>
               <div className='wrapper' onMouseOver={handleMouseOver2} onMouseOut={handleMouseOut2}>
-                        <h1>ROXY</h1>
+                        <h2>ROXY</h2>
                         <AnimatePresence>
                           {isHovering2 && (
                             <motion.div className='cover' 

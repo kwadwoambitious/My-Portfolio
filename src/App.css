@@ -253,10 +253,16 @@ nav ul li{
   gap: 50px;
   justify-content: center;
 }
-.wrapper > h1{
+.wrapper > h2{
   max-width: 500px;
   width: 100%;
   height: 100%;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 .wrapper{
   position: relative;
@@ -265,14 +271,6 @@ nav ul li{
   padding: 20px;
   height: 300px;
   border-radius: 5px;
-}
-.wrapper > h1{
-  font-size: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
 }
 .cover{
   position: absolute;
@@ -386,7 +384,6 @@ body.active-modal {
   overflow-y: hidden;
 }
 .timeline-section{
-	/* min-height: 100vh; */
 	padding: 10px 15px;
 }
 .timeline-items{

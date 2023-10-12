@@ -16,10 +16,17 @@ import basketballImg from '../components/images/interests/basketball.svg';
 import moviesImg from '../components/images/interests/movies.svg';
 import programmingImg from '../components/images/interests/programming.svg';
 import peaceImg from '../components/images/interests/calm-atmosphere.svg';
+import { Helmet } from "react-helmet-async";
 
 const AboutMe = () => {
   return(
     <>
+        <Helmet>
+          <title>About | Ebenezer Antwi</title>
+          <meta name='description' content='About Page' />
+          <link rel='canonical' href='/about' />
+        </Helmet>
+
         <h4>ABOUT</h4>
         <h2>GET TO KNOW ME WELL</h2>
         <h3>Front-end Developer</h3>

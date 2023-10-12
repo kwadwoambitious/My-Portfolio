@@ -1,17 +1,23 @@
 import React from 'react';
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 function Home() {
   return (
     <>
+        <Helmet>
+          <title>Ebenezer Antwi | Front-end Developer</title>
+          <meta name='description' content='Home Page' />
+          <link rel='canonical' href='/' />
+        </Helmet>
         <motion.div
             // initial={{ x: '100vw' }}
             // animate={{ x: 0 }}
             // transition={{ type: 'spring', stiffness: 100 }}
             
             className="home">
-          <h1>Ebenezer Antwi</h1>
+          <h2>Ebenezer Antwi</h2>
           <h2>I'm a <span>Front-end Developer</span></h2>
             <div className='social-icons'>
                     <a href="https://twitter.com/_antwiebenezer" target='_blank' rel='noreferrer'><FaTwitter className='icon'/></a>

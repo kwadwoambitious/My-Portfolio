@@ -2,10 +2,17 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import { FaTwitter, FaLinkedin, FaGithub  } from "react-icons/fa";
 import { LuShare } from 'react-icons/lu';
+import { Helmet } from 'react-helmet-async';
 
 const Socials = () => {
   return (
     <>
+      <Helmet>
+          <title>Contact | Ebenezer Antwi</title>
+          <meta name='description' content='Contact Page' />
+          <link rel='canonical' href='/contact' />
+      </Helmet>
+
       <div className='socials-content'>
           <div className='img'>
               <LuShare className='shareImg'/>

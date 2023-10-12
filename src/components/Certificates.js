@@ -1,9 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 const Certificates = () => {
   return (
     <>
+      <Helmet>
+          <title>Certificates | Ebenezer Antwi</title>
+          <meta name='description' content='Certificates Page' />
+          <link rel='canonical' href='/certificates' />
+      </Helmet>
+
       <motion.div 
         // initial={{ x: '100vw' }}
         // animate={{ x: 0 }}

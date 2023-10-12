@@ -28,7 +28,7 @@ const Certificates = () => {
                 <div class="timeline-date">2016</div>
                 <div class="timeline-content">
                   <h3>RESPONSIVE WEB DESIGN</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                  <p>Building projects that were not responsive was giving me a headache. So, I decided to find an online course that would help me solve these issues. I got to know about this course offered by freeCodeCamp from a friend. I learned the best way to make my projects very responsive on various screen sizes. During this course, I was given five different projects to work on, and they were completed successfully.</p>
                   <a href='https://www.freecodecamp.org/certification/antwiebenezer/responsive-web-design' rel='noreferrer'>CHECK IT</a>
                 </div>
               </div>

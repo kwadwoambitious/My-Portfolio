@@ -434,26 +434,24 @@ body.active-modal {
 .timeline-content p{
   color: white;
 	line-height: 1.5;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Open Sans', sans-serif; 
   text-align: justify;
 }
 .timeline-content a{
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  background-color: white;
-  color: #d434fe;
+  color: white;
   font-size: 1.1em;
   display: inline-block;
   margin-top: 20px;
   padding: 8px 17px;
   border-radius: 30px;
-  border: 1px solid white;
+  border: 1px solid #d434fe;
   transition: 0.2s ease-in-out;
 }
 .timeline-content a:hover{
-  background-color: transparent;
-  color: white;
+  background-color: #d434fe;
 }
 .socials-content{
   display: flex;

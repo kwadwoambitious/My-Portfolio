@@ -64,7 +64,7 @@ const Contact = () => {
             <meta property="og:type" content="website" />
             <meta property='og:title' content='Contact | Ebenezer Antwi' />
             <meta property='og:description' content='Reach out to me by filling out the form on this page.' />
-            <meta property="og:image" content="https://ebenezerantwi.netlify.app/images/og-image.jpg" />
+            <meta property="og:image" itemProp='image' content="https://ebenezerantwi.netlify.app/images/og-image.jpg" />
             <meta property="og:image:width" content="300" />
             <meta property="og:image:height" content="300" />
 

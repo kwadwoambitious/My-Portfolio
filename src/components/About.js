@@ -143,7 +143,7 @@ const About = () => {
               <meta property="og:type" content="website" />
               <meta property='og:title' content='About | Ebenezer Antwi' />
               <meta property='og:description' content='This page shows what I actually do, my skills, and interests.' />
-              <meta property="og:image" content="https://ebenezerantwi.netlify.app/images/og-image.jpg" />
+              <meta property="og:image" itemProp='image' content="https://ebenezerantwi.netlify.app/images/og-image.jpg" />
               <meta property="og:image:width" content="300" />
               <meta property="og:image:height" content="300" />
 

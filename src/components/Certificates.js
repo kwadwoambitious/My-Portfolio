@@ -21,7 +21,7 @@ const Certificates = () => {
             <meta property="og:type" content="website" />
             <meta property='og:title' content='Certificates | Ebenezer Antwi' />
             <meta property='og:description' content='You can find my achievements here.' />
-            <meta property="og:image" content="https://ebenezerantwi.netlify.app/images/og-image.jpg" />
+            <meta property="og:image" itemProp='image' content="https://ebenezerantwi.netlify.app/images/og-image.jpg" />
             <meta property="og:image:width" content="300" />
             <meta property="og:image:height" content="300" />
 

@@ -190,7 +190,7 @@ const Portfolio = () => {
               <meta property="og:type" content="website" />
               <meta property='og:title' content='Portfolio | Ebenezer Antwi' />
               <meta property='og:description' content='The projects I have completed so far are shown on this page.' />
-              <meta property="og:image" content="https://ebenezerantwi.netlify.app/images/og-image.jpg" />
+              <meta property="og:image" itemProp='image' content="https://ebenezerantwi.netlify.app/images/og-image.jpg" />
               <meta property="og:image:width" content="300" />
               <meta property="og:image:height" content="300" />
 

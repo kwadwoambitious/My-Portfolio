@@ -15,24 +15,23 @@ function Home() {
 
         <Helmet>
           
-          {/* <!-- HTML Meta Tags --> */}
           <title>Ebenezer Antwi | Front-end Developer</title>
           <meta name="description" content="The landing page of my official portfolio website." />
 
-          {/* <!-- Facebook Meta Tags --> */}
           <meta property="og:url" content="https://ebenezerantwi.netlify.app/" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Ebenezer Antwi | Front-end Developer" />
           <meta property="og:description" content="The landing page of my official portfolio website." />
-          <meta property="og:image" content="./images/og-image.jpg" />
+          <meta property="og:image" content="/images/og-image.jpg" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
 
-          {/* <!-- Twitter Meta Tags --> */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta property="twitter:domain" content="ebenezerantwi.netlify.app" />
           <meta property="twitter:url" content="https://ebenezerantwi.netlify.app/" />
           <meta name="twitter:title" content="Ebenezer Antwi | Front-end Developer" />
           <meta name="twitter:description" content="The landing page of my official portfolio website." />
-          <meta name="twitter:image" content="./images/og-image.jpg" />
+          <meta name="twitter:image" content="/images/og-image.jpg" />
           <link rel='canonical' href='/' />
         </Helmet>
             

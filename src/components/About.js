@@ -138,14 +138,12 @@ const About = () => {
               <meta name='description' content='This page shows what I actually do, my skills, and interests.' />
               <meta name='keywords' content='ebcodes,EbCodes,EBCODES, Ebenezer Antwi,ebenezerantwi,EbenezerAntwi, My Portfolio,ebenezerantwi.netlify.app' />
 
+              <meta property='og:site_name' content='Ebenezer Antwi' />
               <meta property="og:url" content="https://ebenezerantwi.netlify.app/about" />
               <meta property="og:type" content="website" />
               <meta property='og:title' content='About | Ebenezer Antwi' />
               <meta property='og:description' content='This page shows what I actually do, my skills, and interests.' />
-              <meta property="og:image" content="/images/og-image.jpg" />
-              <meta property="og:image:width" content="1200" />
-              <meta property="og:image:height" content="630" />
-              <meta property="og:image" content="/images/og-image.jpg" />
+              <meta property="og:image" content="https://ebenezerantwi.netlify.app/images/og-image.jpg" />
               <meta property="og:image:width" content="300" />
               <meta property="og:image:height" content="300" />
 
@@ -154,7 +152,7 @@ const About = () => {
               <meta property="twitter:url" content="https://ebenezerantwi.netlify.app/about" />
               <meta name="twitter:title" content="About | Ebenezer Antwi" />
               <meta name="twitter:description" content="This page shows what I actually do, my skills, and interests." />
-              <meta name="twitter:image" content="/images/og-image.jpg" />
+              <meta name="twitter:image" content="https://ebenezerantwi.netlify.app/images/og-image.jpg" />
               <link rel='canonical' href='/' />
         </Helmet>
 

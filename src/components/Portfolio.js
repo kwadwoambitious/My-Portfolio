@@ -185,14 +185,12 @@ const Portfolio = () => {
               <meta name='description' content='The projects I have completed so far are shown on this page.' />
               <meta name='keywords' content='ebcodes,EbCodes,EBCODES, Ebenezer Antwi,ebenezerantwi,EbenezerAntwi, My Portfolio,ebenezerantwi.netlify.app' />
 
+              <meta property='og:site_name' content='Ebenezer Antwi' />
               <meta property="og:url" content="https://ebenezerantwi.netlify.app/portfolio" />
               <meta property="og:type" content="website" />
               <meta property='og:title' content='Portfolio | Ebenezer Antwi' />
               <meta property='og:description' content='The projects I have completed so far are shown on this page.' />
-              <meta property="og:image" content="/images/og-image.jpg" />
-              <meta property="og:image:width" content="1200" />
-              <meta property="og:image:height" content="630" />
-              <meta property="og:image" content="/images/og-image.jpg" />
+              <meta property="og:image" content="https://ebenezerantwi.netlify.app/images/og-image.jpg" />
               <meta property="og:image:width" content="300" />
               <meta property="og:image:height" content="300" />
 
@@ -201,7 +199,7 @@ const Portfolio = () => {
               <meta property="twitter:url" content="https://ebenezerantwi.netlify.app/portfolio" />
               <meta name="twitter:title" content="Portfolio | Ebenezer Antwi" />
               <meta name="twitter:description" content="The projects I have completed so far are shown on this page." />
-              <meta name="twitter:image" content="/images/og-image.jpg" />
+              <meta name="twitter:image" content="https://ebenezerantwi.netlify.app/images/og-image.jpg" />
               <link rel='canonical' href='/' />
           </Helmet>
 

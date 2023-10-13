@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 function Home() {
   return (
@@ -13,7 +13,7 @@ function Home() {
             
             className="home">
 
-<Helmet>
+        <Helmet>
           
           {/* <!-- HTML Meta Tags --> */}
           <title>Ebenezer Antwi | Front-end Developer</title>

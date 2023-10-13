@@ -4,7 +4,7 @@ import { LuX } from 'react-icons/lu';
 import htmlImg from '../images/skills/html.png';
 import cssImg from '../images/skills/css.png';
 import javascriptImg from '../images/skills/javascript.png';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -78,16 +78,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <Helmet>
-          <title>Portfolio | Ebenezer Antwi</title>
-          <meta name='description' content='The projects I have completed so far are shown on this page.' />
-          <meta property='og:title' content='Portfolio | Ebenezer Antwi' />
-          <meta property='og:description' content='The projects I have completed so far are shown on this page.' />
-          <meta property='og:type' content='Portfolio Website' />
-          <meta property='og:image' content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
-          <meta name="twitter:card" content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
-          <link rel='canonical' href='/portfolio' />
-      </Helmet>
+      
 
       <AnimatePresence>
         {modal && (
@@ -189,6 +180,18 @@ const Portfolio = () => {
         // transition={{ type: 'spring', stiffness: 100 }}
 
         className="portfolio-container">
+        <Helmet>
+              <title>Portfolio | Ebenezer Antwi</title>
+              <meta name='description' content='The projects I have completed so far are shown on this page.' />
+              <meta property='og:title' content='Portfolio | Ebenezer Antwi' />
+              <meta property='og:description' content='The projects I have completed so far are shown on this page.' />
+              <meta property='og:type' content='Portfolio Website' />
+              <meta property='og:image' content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
+              <meta name="twitter:card" content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
+              <link rel='canonical' href='/portfolio' />
+          </Helmet>
+
+
         <h4>PORTFOLIO</h4>
         <h2>MY PROJECTS</h2>
         <div className="projects-container">

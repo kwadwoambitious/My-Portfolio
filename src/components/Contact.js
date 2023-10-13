@@ -2,22 +2,11 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import { FaTwitter, FaLinkedin, FaGithub  } from "react-icons/fa";
 import { LuShare } from 'react-icons/lu';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 const Socials = () => {
   return (
     <>
-      <Helmet>
-          <title>Contact | Ebenezer Antwi</title>
-          <meta name='description' content='Reach out to me by filling out the form on this page.' />
-          <meta property='og:title' content='Contact | Ebenezer Antwi' />
-          <meta property='og:description' content='Reach out to me by filling out the form on this page.' />
-          <meta property='og:type' content='Portfolio Website' />
-          <meta property='og:image' content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
-          <meta name="twitter:card" content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
-          <link rel='canonical' href='/contact' />
-      </Helmet>
-
       <div className='socials-content'>
           <div className='img'>
               <LuShare className='shareImg'/>
@@ -65,6 +54,17 @@ const Contact = () => {
         
 
         className="contact-container">
+        <Helmet>
+            <title>Contact | Ebenezer Antwi</title>
+            <meta name='description' content='Reach out to me by filling out the form on this page.' />
+            <meta property='og:title' content='Contact | Ebenezer Antwi' />
+            <meta property='og:description' content='Reach out to me by filling out the form on this page.' />
+            <meta property='og:type' content='Portfolio Website' />
+            <meta property='og:image' content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
+            <meta name="twitter:card" content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
+            <link rel='canonical' href='/contact' />
+        </Helmet>
+
         <h4>CONTACT</h4>
         <h2>CONTACT ME</h2>
         <Socials/>

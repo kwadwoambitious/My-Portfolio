@@ -16,22 +16,11 @@ import basketballImg from '../components/images/interests/basketball.svg';
 import moviesImg from '../components/images/interests/movies.svg';
 import programmingImg from '../components/images/interests/programming.svg';
 import peaceImg from '../components/images/interests/calm-atmosphere.svg';
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 const AboutMe = () => {
   return(
     <>
-        <Helmet>
-          <title>About | Ebenezer Antwi</title>
-          <meta name='description' content='This page shows what I actually do, my skills, and interests.' />
-          <meta property='og:title' content='About | Ebenezer Antwi' />
-          <meta property='og:description' content='This page shows what I actually do, my skills, and interests.' />
-          <meta property='og:type' content='Portfolio Website' />
-          <meta property='og:image' content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
-          <meta name="twitter:card" content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
-          <link rel='canonical' href='/about' />
-        </Helmet>
-
         <h4>ABOUT</h4>
         <h2>GET TO KNOW ME WELL</h2>
         <h3>Front-end Developer</h3>
@@ -144,6 +133,17 @@ const About = () => {
         // transition={{ type: 'spring', stiffness: 100 }}
 
         className='about-container'>
+          <Helmet>
+              <title>About | Ebenezer Antwi</title>
+              <meta name='description' content='This page shows what I actually do, my skills, and interests.' />
+              <meta property='og:title' content='About | Ebenezer Antwi' />
+              <meta property='og:description' content='This page shows what I actually do, my skills, and interests.' />
+              <meta property='og:type' content='Portfolio Website' />
+              <meta property='og:image' content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
+              <meta name="twitter:card" content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
+              <link rel='canonical' href='/about' />
+        </Helmet>
+
         <AboutMe/>
         <Skills/>
         <Interest/>

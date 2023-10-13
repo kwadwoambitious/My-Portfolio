@@ -23,7 +23,7 @@ function Home() {
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Ebenezer Antwi | Front-end Developer" />
           <meta property="og:description" content="The landing page of my official portfolio website." />
-          <meta property="og:image" content="/images/og-image.jpg" />
+          <meta property="og:image" itemProp='image' content="/images/og-image.jpg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
           <meta property="og:image" content="/images/og-image.jpg" />

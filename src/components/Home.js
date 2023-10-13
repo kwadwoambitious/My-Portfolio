@@ -17,6 +17,7 @@ function Home() {
           
           <title>Ebenezer Antwi | Front-end Developer</title>
           <meta name="description" content="The landing page of my official portfolio website." />
+          <meta name='keywords' content='ebcodes,EbCodes,EBCODES, Ebenezer Antwi,ebenezerantwi,EbenezerAntwi, My Portfolio,ebenezerantwi.netlify.app' />
 
           <meta property="og:url" content="https://ebenezerantwi.netlify.app/" />
           <meta property="og:type" content="website" />

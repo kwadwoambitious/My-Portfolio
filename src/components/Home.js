@@ -23,10 +23,10 @@ function Home() {
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Ebenezer Antwi | Front-end Developer" />
           <meta property="og:description" content="The landing page of my official portfolio website." />
-          <meta property="og:image" itemProp='image' content="/images/og-image.jpg" />
+          <meta property="og:image" itemProp='image' content="https://ebenezerantwi.netlify.app/images/og-image.jpg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
-          <meta property="og:image" content="/images/og-image.jpg" />
+          <meta property="og:image" itemProp='image' content="https://ebenezerantwi.netlify.app/images/og-image.jpg" />
           <meta property="og:image:width" content="300" />
           <meta property="og:image:height" content="300" />
 
@@ -35,7 +35,7 @@ function Home() {
           <meta property="twitter:url" content="https://ebenezerantwi.netlify.app/" />
           <meta name="twitter:title" content="Ebenezer Antwi | Front-end Developer" />
           <meta name="twitter:description" content="The landing page of my official portfolio website." />
-          <meta name="twitter:image" content="/images/og-image.jpg" />
+          <meta name="twitter:image" content="https://ebenezerantwi.netlify.app/images/og-image.jpg" />
           <link rel='canonical' href='/' />
         </Helmet>
             

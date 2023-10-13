@@ -25,6 +25,9 @@ function Home() {
           <meta property="og:image" content="/images/og-image.jpg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
+          <meta property="og:image" content="/images/og-image.jpg" />
+          <meta property="og:image:width" content="300" />
+          <meta property="og:image:height" content="300" />
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta property="twitter:domain" content="ebenezerantwi.netlify.app" />

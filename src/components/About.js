@@ -136,12 +136,26 @@ const About = () => {
           <Helmet>
               <title>About | Ebenezer Antwi</title>
               <meta name='description' content='This page shows what I actually do, my skills, and interests.' />
+              <meta name='keywords' content='ebcodes,EbCodes,EBCODES, Ebenezer Antwi,ebenezerantwi,EbenezerAntwi, My Portfolio,ebenezerantwi.netlify.app' />
+
+              <meta property="og:url" content="https://ebenezerantwi.netlify.app/about" />
+              <meta property="og:type" content="website" />
               <meta property='og:title' content='About | Ebenezer Antwi' />
               <meta property='og:description' content='This page shows what I actually do, my skills, and interests.' />
-              <meta property='og:type' content='Portfolio Website' />
-              <meta property='og:image' content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
-              <meta name="twitter:card" content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
-              <link rel='canonical' href='/about' />
+              <meta property="og:image" content="/images/og-image.jpg" />
+              <meta property="og:image:width" content="1200" />
+              <meta property="og:image:height" content="630" />
+              <meta property="og:image" content="/images/og-image.jpg" />
+              <meta property="og:image:width" content="300" />
+              <meta property="og:image:height" content="300" />
+
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta property="twitter:domain" content="ebenezerantwi.netlify.app" />
+              <meta property="twitter:url" content="https://ebenezerantwi.netlify.app/about" />
+              <meta name="twitter:title" content="About | Ebenezer Antwi" />
+              <meta name="twitter:description" content="This page shows what I actually do, my skills, and interests." />
+              <meta name="twitter:image" content="/images/og-image.jpg" />
+              <link rel='canonical' href='/' />
         </Helmet>
 
         <AboutMe/>

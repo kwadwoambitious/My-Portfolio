@@ -14,12 +14,26 @@ const Certificates = () => {
         <Helmet>
             <title>Certificates | Ebenezer Antwi</title>
             <meta name='description' content='You can find my achievements here.' />
+            <meta name='keywords' content='ebcodes,EbCodes,EBCODES, Ebenezer Antwi,ebenezerantwi,EbenezerAntwi, My Portfolio,ebenezerantwi.netlify.app' />
+
+            <meta property="og:url" content="https://ebenezerantwi.netlify.app/certificates" />
+            <meta property="og:type" content="website" />
             <meta property='og:title' content='Certificates | Ebenezer Antwi' />
             <meta property='og:description' content='You can find my achievements here.' />
-            <meta property='og:type' content='Portfolio Website' />
-            <meta property='og:image' content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
-            <meta name="twitter:card" content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
-            <link rel='canonical' href='/certificates' />
+            <meta property="og:image" content="/images/og-image.jpg" />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image" content="/images/og-image.jpg" />
+            <meta property="og:image:width" content="300" />
+            <meta property="og:image:height" content="300" />
+
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta property="twitter:domain" content="ebenezerantwi.netlify.app" />
+            <meta property="twitter:url" content="https://ebenezerantwi.netlify.app/certificates" />
+            <meta name="twitter:title" content="Certificates | Ebenezer Antwi" />
+            <meta name="twitter:description" content="You can find my achievements here." />
+            <meta name="twitter:image" content="/images/og-image.jpg" />
+            <link rel='canonical' href='/' />
         </Helmet>
         <h4>CERTIFICATES</h4>
         <h2>MY CERTIFICATES</h2>

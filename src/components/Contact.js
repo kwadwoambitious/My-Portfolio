@@ -57,12 +57,26 @@ const Contact = () => {
         <Helmet>
             <title>Contact | Ebenezer Antwi</title>
             <meta name='description' content='Reach out to me by filling out the form on this page.' />
+            <meta name='keywords' content='ebcodes,EbCodes,EBCODES, Ebenezer Antwi,ebenezerantwi,EbenezerAntwi, My Portfolio,ebenezerantwi.netlify.app' />
+
+            <meta property="og:url" content="https://ebenezerantwi.netlify.app/contact" />
+            <meta property="og:type" content="website" />
             <meta property='og:title' content='Contact | Ebenezer Antwi' />
             <meta property='og:description' content='Reach out to me by filling out the form on this page.' />
-            <meta property='og:type' content='Portfolio Website' />
-            <meta property='og:image' content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
-            <meta name="twitter:card" content='https://images.creativemarket.com/0.1.0/ps/10736915/1820/1214/m1/fpnw/wm0/ebenezer-a-.jpg?1628144196&s=41244797bd139909e78182993fe2f4c5' />
-            <link rel='canonical' href='/contact' />
+            <meta property="og:image" content="/images/og-image.jpg" />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image" content="/images/og-image.jpg" />
+            <meta property="og:image:width" content="300" />
+            <meta property="og:image:height" content="300" />
+
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta property="twitter:domain" content="ebenezerantwi.netlify.app" />
+            <meta property="twitter:url" content="https://ebenezerantwi.netlify.app/contact" />
+            <meta name="twitter:title" content="Contact | Ebenezer Antwi" />
+            <meta name="twitter:description" content="Reach out to me by filling out the form on this page." />
+            <meta name="twitter:image" content="/images/og-image.jpg" />
+            <link rel='canonical' href='/' />
         </Helmet>
 
         <h4>CONTACT</h4>

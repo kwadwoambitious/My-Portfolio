@@ -40,6 +40,25 @@ const Portfolio = () => {
     }
   }
 
+  const cover = {
+    hidden: {
+      y: '-100%',
+    },
+    visible: {
+      y: '0%',
+      transition: {
+        type: 'tween', ease: 'easeOut',
+      }
+    },
+    exit: {
+      y: '100%',
+      opacity: 0,
+      transition: {
+          ease: 'easeOut',
+      }
+    }
+  }
+
   const [modal, setModal] = useState(false);
   const [modal2, setModal2] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
@@ -53,19 +72,19 @@ const Portfolio = () => {
     setModal2(!modal2);
   }
 
-  const handleMouseOver = () => {
+  const handleMouseEnter = () => {
     setIsHovering(true);
   }
 
-  const handleMouseOut = () => {
+  const handleMouseLeave = () => {
     setIsHovering(false);
   }
 
-  const handleMouseOver2 = () => {
+  const handleMouseEnter2 = () => {
     setIsHovering2(true);
   }
 
-  const handleMouseOut2 = () => {
+  const handleMouseLeave2 = () => {
     setIsHovering2(false);
   }
 
@@ -99,8 +118,8 @@ const Portfolio = () => {
           className='modal'>
               <h2>PROJECT INFO</h2>
               <p>
-                <li><b>Project URL: </b><a href="https://oria-charity-foundation.netlify.app/" target='_blank' rel='noreferrer'>Oria Charity Foundation</a></li>
-                <li><b>Project date: </b>September, 2023</li>
+                <li><b>Project URL: </b><a href="https://oria-charity-foundation.netlify.app/" target='_blank' rel='noreferrer'>View it here</a></li>
+                <li><b>Project date: </b>Sep, 2023</li>
               </p>
               <h2>ABOUT PROJECT</h2>
               <p>
@@ -146,8 +165,8 @@ const Portfolio = () => {
           className='modal'>
           <h2>PROJECT INFO</h2>
               <p>
-                <li><b>Project URL: </b><a href="https://roxy-by-eben.netlify.app/" target='_blank' rel='noreferrer'> ROXY</a></li>
-                <li><b>Project date: </b> September, 2023</li>
+                <li><b>Project URL: </b><a href="https://roxy-by-eben.netlify.app/" target='_blank' rel='noreferrer'> View it here</a></li>
+                <li><b>Project date: </b> Sep, 2023</li>
               </p>
               <h2>ABOUT PROJECT</h2>
               <p>
@@ -208,16 +227,16 @@ const Portfolio = () => {
         <h2>MY PROJECTS</h2>
         <div className="projects-container">
           <div>
-              <div className='wrapper' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                  <h2>ORIA CHARITY FOUNDATION</h2>
+              <div className='wrapper' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                  <img src='./images/projects/project-1.png' alt='project-1' />
                   <AnimatePresence>
                       {isHovering && (
                         <motion.div className='cover' 
-                            initial={{ x: '-100%' }}
-                            animate={{ x: 0 }}
-                            transition={{ type: 'tween', ease: 'easeInOut' }}
-                            exit={{ x: '-100%' }}>
-                              <h1>ORIA</h1>
+                            variants={cover}
+                            initial='hidden'
+                            animate='visible'
+                            exit='exit'>
+                              <h3>ORIA CHARITY FOUNDATION</h3>
                               <div>
                                 <p onClick={toggleModal}>Info</p>
                                 <a href='https://github.com/kwadwoambitious/Oria-Charity-Foundation' target='_blank' rel='noreferrer'>Github</a>
@@ -228,16 +247,16 @@ const Portfolio = () => {
               </div>
           </div>
           <div>
-              <div className='wrapper' onMouseOver={handleMouseOver2} onMouseOut={handleMouseOut2}>
-                        <h2>ROXY</h2>
+              <div className='wrapper' onMouseEnter={handleMouseEnter2} onMouseLeave={handleMouseLeave2}>
+                        <img src='./images/projects/project-2.png' alt='project-2' />
                         <AnimatePresence>
                           {isHovering2 && (
                             <motion.div className='cover' 
-                                initial={{ x: '-100%' }}
-                                animate={{ x: 0 }}
-                                transition={{ type: 'tween', ease: 'easeInOut' }}
-                                exit={{ x: '-100%' }}>
-                                  <h1>ROXY</h1>
+                                  variants={cover}
+                                  initial='hidden'
+                                  animate='visible'
+                                  exit='exit'>
+                                  <h3>ROXY TEMPLATE</h3>
                                   <div>
                                     <p onClick={toggleModal2}>Info</p>
                                     <a href='https://github.com/kwadwoambitious/Roxy-Template' target='_blank' rel='noreferrer'>Github</a>

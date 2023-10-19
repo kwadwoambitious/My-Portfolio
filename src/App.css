@@ -313,9 +313,9 @@ nav ul li{
   position: absolute;
   content: '';
   background-color: white;
-  width: 50px;
+  width: 80px;
   height: 1px;
-  top: -10px;
+  top: -6px;
   left: 50%;
   border-radius: 10px;
   transform: translateX(-50%);
@@ -324,10 +324,10 @@ nav ul li{
   position: absolute;
   content: '';
   background-color: white;
-  width: 50px;
+  width: 80px;
   height: 1px;
   border-radius: 10px;
-  bottom: -10px;
+  bottom: -6px;
   left: 50%;
   transform: translate(-50%, -50%);
 }

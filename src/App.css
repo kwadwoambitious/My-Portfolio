@@ -170,7 +170,7 @@ nav ul li{
 }
 .about-container > h2, .portfolio-container h2, .awards-container h2, .contact-container h2{
   font-size: 2.5em;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-weight: 700;
 }
 .about-container > h3{
@@ -254,42 +254,41 @@ nav ul li{
 }
 .projects-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
   gap: 50px;
   justify-content: center;
 }
-.wrapper > h2{
-  max-width: 500px;
+.wrapper > img{
+  max-width: 400px;
   width: 100%;
   height: 100%;
-  font-size: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
+  border-radius: 10px;
+  object-fit: cover;
 }
 .wrapper{
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
-  background-color: #0164d5;
-  padding: 20px;
-  height: 300px;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: -1px 1px 12px -7px white;
+  -webkit-box-shadow: -1px 1px 12px -7px white;
+  -moz-box-shadow: -1px 1px 12px -7px white;
 }
 .cover{
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.959);
+  background-color: rgba(0, 0, 0, 0.937);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 30px;
-  border: 5px solid white;
+  gap: 50px;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 .cover a, .cover p{
   color: white;
@@ -304,6 +303,33 @@ nav ul li{
 }
 .cover a:hover, .cover p:hover{
   background-color: #0164d5af;
+}
+.cover h3{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  position: relative;
+}
+.cover h3::before{
+  position: absolute;
+  content: '';
+  background-color: white;
+  width: 50px;
+  height: 1px;
+  top: -10px;
+  left: 50%;
+  border-radius: 10px;
+  transform: translateX(-50%);
+}
+.cover h3::after{
+  position: absolute;
+  content: '';
+  background-color: white;
+  width: 50px;
+  height: 1px;
+  border-radius: 10px;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .modal-overlay {
   position: fixed;
@@ -321,7 +347,7 @@ nav ul li{
   transform: translate(-50%, -50%);
   color: white;
   background-color: rgba(0, 0, 0, 0.614);
-  padding: 30px 28px;
+  padding: 30px 15px;
   border-radius: 3px;
   max-width: 600px;
   width: 100%;
@@ -635,6 +661,9 @@ form input[type="submit"]:hover{
   }
   .about-container > h2, .portfolio-container > h2, .awards-container > h2, .contact-container > h2{
     font-size: 1.8em;
+  }
+  .wrapper{
+    height: 300px;
   }
   form .div-flex{
     display: block;

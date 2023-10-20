@@ -1,5 +1,5 @@
-import React from "react";
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from 'framer-motion';
 import htmlImg from '../images/skills/html.png';
 import cssImg from '../images/skills/css.png';
 import javascriptImg from '../images/skills/javascript.png';
@@ -17,6 +17,7 @@ import moviesImg from '../components/images/interests/movies.svg';
 import programmingImg from '../components/images/interests/programming.svg';
 import peaceImg from '../components/images/interests/calm-atmosphere.svg';
 import { Helmet } from "react-helmet";
+import { FaPlusCircle, FaMinusCircle } from 'react-icons/fa';
 
 const AboutMe = () => {
   return(
@@ -116,13 +117,92 @@ const Interest = () => {
   )
 }
 
-// const Services = () => {
-//   return (
-//     <>
-//       <h4 className="title">SERVICES</h4>
-//     </>
-//   )
-// }
+const Services = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen3, setIsOpen3] = useState(false);
+
+  const openIt = () => {
+    setIsOpen(!isOpen);
+  }
+  const openIt2 = () => {
+    setIsOpen2(!isOpen2);
+  }
+  const openIt3 = () => {
+    setIsOpen3(!isOpen3);
+  }
+
+  const openService = {
+    hidden: {
+      height: '80px',
+    },
+    visible: {
+      height: '100%',
+    },
+  }
+  return (
+    <>
+      <h4 className="title">SERVICES</h4>
+      <div className="services-container">
+      <AnimatePresence>
+        <motion.div 
+        variants={openService}
+        initial='hidden'
+        animate='visible'
+        exit='exit'
+        
+        className="service">
+          <h2 onClick={openIt}>Web Development 
+            {isOpen ? <FaMinusCircle className="arrow-icon" />
+              : <FaPlusCircle className="arrow-icon" />  
+            }
+          </h2>
+            {isOpen && (
+              <motion.p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eligendi non quidem molestiae odio officia nulla nemo, tempore recusandae ab optio maiores harum! Molestias quis optio, libero earum eaque amet temporibus placeat nobis asperiores ad necessitatibus nostrum aspernatur ipsum repellat accusamus vero consequuntur! Dolores natus accusamus tempore aspernatur consequatur quos!</motion.p>
+            )}
+          
+        </motion.div>
+      </AnimatePresence>
+        <AnimatePresence>
+          <motion.div 
+          variants={openService}
+          initial='hidden'
+          animate='visible'
+          exit='exit'
+          
+          className="service">
+            <h2 onClick={openIt2}>Responsive Design
+            {isOpen2 ? <FaMinusCircle className="arrow-icon" />
+              : <FaPlusCircle className="arrow-icon" />
+            }
+              </h2>
+            {isOpen2 && (
+              <motion.p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis dolore possimus? Dicta deleniti iusto earum veritatis! Est dignissimos dolorum ut iure provident aut labore eos, error quae quo, at quaerat distinctio ipsum. Reiciendis eum animi sed explicabo, rem eveniet, consequuntur fugiat quibusdam harum ullam iusto tempora amet vero nostrum.</motion.p>
+            )}
+          </motion.div>
+        </AnimatePresence>
+        <AnimatePresence>
+          <motion.div 
+          variants={openService}
+          initial='hidden'
+          animate='visible'
+          exit='exit'
+          
+          className="service">
+            <h2 onClick={openIt3}>Website Management
+            {isOpen3 ? <FaMinusCircle className="arrow-icon" />
+              : <FaPlusCircle className="arrow-icon" />
+            }
+              </h2>
+            {isOpen3 && (
+              <motion.p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eligendi non quidem molestiae odio officia nulla nemo, tempore recusandae ab optio maiores harum! Molestias quis optio, libero earum eaque amet temporibus placeat nobis asperiores ad necessitatibus nostrum aspernatur ipsum repellat accusamus vero consequuntur! Dolores natus accusamus tempore aspernatur consequatur quos!</motion.p>
+            )}
+          </motion.div>
+        </AnimatePresence>
+      </div>
+    </>
+  )
+}
 
 const About = () => {
   return (
@@ -159,7 +239,7 @@ const About = () => {
         <AboutMe/>
         <Skills/>
         <Interest/>
-        {/* <Services/> */}
+        <Services/>
       </motion.div>
     </>
     

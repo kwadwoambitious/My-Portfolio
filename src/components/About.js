@@ -158,7 +158,7 @@ const Services = () => {
             }
           </h2>
             {isOpen && (
-              <motion.p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eligendi non quidem molestiae odio officia nulla nemo, tempore recusandae ab optio maiores harum! Molestias quis optio, libero earum eaque amet temporibus placeat nobis asperiores ad necessitatibus nostrum aspernatur ipsum repellat accusamus vero consequuntur! Dolores natus accusamus tempore aspernatur consequatur quos!</motion.p>
+              <motion.p>This is the core service. I build websites and web applications from scratch, or redesign and update existing ones. This involves writing the HTML, CSS, and JavaScript code that makes up the front-end of a website or web application.</motion.p>
             )}
           
         </motion.div>
@@ -177,7 +177,7 @@ const Services = () => {
             }
               </h2>
             {isOpen2 && (
-              <motion.p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis dolore possimus? Dicta deleniti iusto earum veritatis! Est dignissimos dolorum ut iure provident aut labore eos, error quae quo, at quaerat distinctio ipsum. Reiciendis eum animi sed explicabo, rem eveniet, consequuntur fugiat quibusdam harum ullam iusto tempora amet vero nostrum.</motion.p>
+              <motion.p>I ensure that websites and web applications look good and function well on all devices, including desktop computers, laptops, tablets, and smartphones. I use a variety of techniques to make websites and web applications responsive, such as using CSS media queries and fluid layouts.</motion.p>
             )}
           </motion.div>
         </AnimatePresence>
@@ -189,13 +189,13 @@ const Services = () => {
           exit='exit'
           
           className="service">
-            <h2 onClick={openIt3}>Website Management
+            <h2 onClick={openIt3}>Maintenance
             {isOpen3 ? <FaMinusCircle className="arrow-icon" />
               : <FaPlusCircle className="arrow-icon" />
             }
               </h2>
             {isOpen3 && (
-              <motion.p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eligendi non quidem molestiae odio officia nulla nemo, tempore recusandae ab optio maiores harum! Molestias quis optio, libero earum eaque amet temporibus placeat nobis asperiores ad necessitatibus nostrum aspernatur ipsum repellat accusamus vero consequuntur! Dolores natus accusamus tempore aspernatur consequatur quos!</motion.p>
+              <motion.p>Maintenance and support for websites and web applications is important because it helps to keep them secure, up-to-date, and running smoothly. I can play a vital role in this process by fixing bugs, adding new features, updating to new versions of software, monitoring performance, and ensuring accessibility.</motion.p>
             )}
           </motion.div>
         </AnimatePresence>

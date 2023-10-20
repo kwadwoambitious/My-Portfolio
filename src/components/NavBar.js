@@ -8,6 +8,7 @@ function NavBar() {
 
   const showNavMenu = () => {
     navRef.current.classList.toggle('show');
+    
     if (navRef.current.classList.contains('show')){
       document.body.style.overflowY = 'hidden';
     }

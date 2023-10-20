@@ -36,11 +36,8 @@ header{
   text-decoration: none;
 }
 .logo h1{
-  color: #0164d5;
-  font-family: 'Dancing Script', cursive;
-}
-.logo h1 span{
   color: white;
+  font-family: 'Dancing Script', cursive;
 }
 nav{
   display: flex;
@@ -252,6 +249,36 @@ nav ul li{
   width: 35px;
   margin-right: 15px;
 }
+.services-container{
+  margin-top: 40px;
+}
+.service{
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  background-color: #2e2e2e80;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+.service h2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 50px;
+  cursor: pointer;
+  font-size: 1.6em;
+  font-family: 'Raleway', sans-serif;
+}
+.service p{
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.7;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+.arrow-icon{
+  font-size: 20px;
+  color:white;
+}
 .projects-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, auto));
@@ -271,16 +298,17 @@ nav ul li{
   height: 100%;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
   border-radius: 10px;
-  box-shadow: -1px 1px 12px -7px white;
-  -webkit-box-shadow: -1px 1px 12px -7px white;
-  -moz-box-shadow: -1px 1px 12px -7px white;
+  box-shadow: -1px 1px 10px -7px white;
+  -webkit-box-shadow: -1px 1px 10px -7px white;
+  -moz-box-shadow: -1px 1px 10px -7px white;
 }
 .cover{
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.937);
+  background-color: rgba(0, 0, 0, 0.961);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -288,7 +316,6 @@ nav ul li{
   gap: 50px;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
 }
 .cover a, .cover p{
   color: white;
@@ -662,6 +689,12 @@ form input[type="submit"]:hover{
   .about-container > h2, .portfolio-container > h2, .awards-container > h2, .contact-container > h2{
     font-size: 1.8em;
   }
+  .services-container{
+    grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+  }
+  .service h2{
+    font-size: 1.2em;
+  }
   .wrapper{
     height: 300px;
   }
@@ -708,6 +741,9 @@ form input[type="submit"]:hover{
   }
   .interest-content{
     grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+  }
+  .service h2{
+    font-size: 1em;
   }
   .timeline-content h3{
     font-size: 19px;

@@ -695,6 +695,9 @@ form input[type="submit"]:hover{
   .service h2{
     font-size: 1.2em;
   }
+  .service p{
+    font-size: 1em;
+  }
   .wrapper{
     height: 300px;
   }

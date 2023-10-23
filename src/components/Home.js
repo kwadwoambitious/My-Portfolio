@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
@@ -44,6 +45,7 @@ function Home() {
                     <a href="https://www.linkedin.com/in/antwi-ebenezer" target='_blank' rel='noreferrer'><FaLinkedin className='icon'/></a>
                     <a href="https://github.com/kwadwoambitious" target='_blank' rel='noreferrer'><FaGithub className='icon'/></a>
             </div>
+            <NavLink to="/contact" className="hire-me-btn">Hire Me</NavLink>
         </motion.div>
     </>
   )

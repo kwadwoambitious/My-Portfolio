@@ -105,16 +105,16 @@ const ContactForm = () => {
         
         <div className='div-flex'>
           <div>
-              <input type="text" name="name" id="name" placeholder='Your Name'  autoComplete='off' /> 
+              <input type="text" name="name" id="name" placeholder='Your Name'  autoComplete='off' required/> 
           </div>
           <div>
-              <input type="email" name="email" id="email" placeholder='Your Email'  autoComplete='off' />
+              <input type="email" name="email" id="email" placeholder='Your Email'  autoComplete='off' required/>
               
           </div>
         </div>
-        <input type="text" name="subject" id="subject" placeholder='Subject'  autoComplete='off' />
+        <input type="text" name="subject" id="subject" placeholder='Subject'  autoComplete='off' required/>
         
-        <textarea name="message" id="message" rows="8" placeholder='Message'  autoComplete='off' />
+        <textarea name="message" id="message" rows="8" placeholder='Message'  autoComplete='off' required/>
         
         <input type="submit" value="Send Message" />
         

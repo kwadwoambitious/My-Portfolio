@@ -29,27 +29,9 @@ const Socials = () => {
 const ContactForm = () => {
   const form = useRef();
 
-  // const [formData, setFormData] = useState({
-  //   name: '',
-  //   email: '',
-  //   subject: '',
-  //   message: ''
-  // })
-
-  // const [errors, setErrors] = useState({})
-
-  // const handleChange = (e) => {
-  //   const {name, value} = e.target;
-  //   setFormData({
-  //       ...formData, [name] : value
-  //   })
-  // }
-
   const sendEmail = (e) => {
     e.preventDefault();
-
-
-      emailjs.sendForm('service_qoc1s35', 'template_ojuf1m7', form.current, 'YpOlEA4tAVCYxQj9j')
+    emailjs.sendForm('service_qoc1s35', 'template_ojuf1m7', form.current, 'YpOlEA4tAVCYxQj9j')
         .then((result) => {
             console.log(result.text);
             console.log('Message Sent');
@@ -58,45 +40,7 @@ const ContactForm = () => {
         }, (error) => {
             console.log(error.text);
         });
-
-
-
-    // e.preventDefault()
-    // const validationErrors = {}
-    // if(!formData.name.trim()) {
-    //     validationErrors.name = "Name is required"
-    // }
-
-    // if(!formData.email.trim()) {
-    //     validationErrors.email = "Email is required"
-    // } else if(!/\S+@\S+\.\S+/.test(formData.email)){
-    //     validationErrors.email = "Email is not valid"
-    // }
-
-    // if(!formData.subject.trim()) {
-    //   validationErrors.subject = "Subject is required"
-    // }
-
-    // if(!formData.message.trim()) {
-    //   validationErrors.message = "Message is required"
-    // }
-
-    // setErrors(validationErrors)
-
-    // if(Object.keys(validationErrors).length === 0) {
-    //   e.preventDefault();
-
-    //   emailjs.sendForm('service_qoc1s35', 'template_ojuf1m7', form.current, 'YpOlEA4tAVCYxQj9j')
-    //     .then((result) => {
-    //         console.log(result.text);
-    //         console.log('Message Sent');
-    //     }, (error) => {
-    //         console.log(error.text);
-    //     });
-    //     window.location.reload(false);
-    // }
-
-  }
+      }
 
   return (
     

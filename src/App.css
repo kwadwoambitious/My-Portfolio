@@ -111,7 +111,6 @@ nav ul li{
 .home h2{
   font-size: 1.7rem;
   font-family: 'Raleway', sans-serif;
-  margin-top: 10px;
   line-height: 2;
 }
 .home h2 span{
@@ -120,7 +119,7 @@ nav ul li{
   padding-bottom: 5px;
 }
 .social-icons{
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
 }
 .social-icons a{
@@ -139,6 +138,22 @@ nav ul li{
 .social-icons a:hover{
   background-color: #0164d5;
   color: white;
+}
+.hire-me-btn{
+  display: inline-block;
+  margin-top: 20px;
+  color: white;
+  background-color: #0164d5af;
+  padding: 12px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  width: 130px;
+  text-align: center;
+  transition: 0.3s ease-out;
+}
+.hire-me-btn:hover{
+  background-color: #0164d5;
 }
 .about-container, .portfolio-container, .awards-container, .contact-container{
   background-color: #030303de;

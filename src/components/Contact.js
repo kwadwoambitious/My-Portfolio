@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import React, {  useState } from 'react';
+import React, {  useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { FaTwitter, FaLinkedin, FaGithub  } from "react-icons/fa";
 import { LuShare } from 'react-icons/lu';
 import { Helmet } from 'react-helmet';
@@ -25,69 +26,91 @@ const Socials = () => {
 }
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  })
+  const form = useRef();
 
-  const [errors, setErrors] = useState({})
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   subject: '',
+  //   message: ''
+  // })
 
-  const handleChange = (e) => {
-    const {name, value} = e.target;
-    setFormData({
-        ...formData, [name] : value
-    })
-  }
+  // const [errors, setErrors] = useState({})
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const validationErrors = {}
-    if(!formData.name.trim()) {
-        validationErrors.name = "Name is required"
-    }
+  // const handleChange = (e) => {
+  //   const {name, value} = e.target;
+  //   setFormData({
+  //       ...formData, [name] : value
+  //   })
+  // }
 
-    if(!formData.email.trim()) {
-        validationErrors.email = "Email is required"
-    } else if(!/\S+@\S+\.\S+/.test(formData.email)){
-        validationErrors.email = "Email is not valid"
-    }
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    if(!formData.subject.trim()) {
-      validationErrors.subject = "Subject is required"
-    }
+      emailjs.sendForm('service_qoc1s35', 'template_ojuf1m7', form.current, 'YpOlEA4tAVCYxQj9j')
+        .then((result) => {
+            console.log(result.text);
+            console.log('Message Sent');
+            e.target.reset();
+        }, (error) => {
+            console.log(error.text);
+        });
 
-    if(!formData.message.trim()) {
-      validationErrors.message = "Message is required"
-    }
 
-    setErrors(validationErrors)
 
-    if(Object.keys(validationErrors).length === 0) {
-        alert("Form Submitted successfully");
-        window.location.reload(false);
-    }
+    // e.preventDefault()
+    // const validationErrors = {}
+    // if(!formData.name.trim()) {
+    //     validationErrors.name = "Name is required"
+    // }
+
+    // if(!formData.email.trim()) {
+    //     validationErrors.email = "Email is required"
+    // } else if(!/\S+@\S+\.\S+/.test(formData.email)){
+    //     validationErrors.email = "Email is not valid"
+    // }
+
+    // if(!formData.subject.trim()) {
+    //   validationErrors.subject = "Subject is required"
+    // }
+
+    // if(!formData.message.trim()) {
+    //   validationErrors.message = "Message is required"
+    // }
+
+    // setErrors(validationErrors)
+
+    // if(Object.keys(validationErrors).length === 0) {
+    //   e.preventDefault();
+
+    //   emailjs.sendForm('service_qoc1s35', 'template_ojuf1m7', form.current, 'YpOlEA4tAVCYxQj9j')
+    //     .then((result) => {
+    //         console.log(result.text);
+    //         console.log('Message Sent');
+    //     }, (error) => {
+    //         console.log(error.text);
+    //     });
+    //     window.location.reload(false);
+    // }
 
   }
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form ref={form} onSubmit={sendEmail}>
         <div className='div-flex'>
           <div>
-              <input type="text" name="name" id="name" placeholder='Your Name' onChange={handleChange}   />
-              {errors.name && <span style={{color: 'red', display: 'block', marginTop: '-13px', marginBottom: '15px'}}>{errors.name}</span>} 
+              <input type="text" name="name" id="name" placeholder='Your Name'  autoComplete='off' /> 
           </div>
           <div>
-              <input type="email" name="email" id="email" placeholder='Your Email' onChange={handleChange}   />
-              {errors.email && <span style={{color: 'red', display: 'block', marginTop: '-13px', marginBottom: '15px'}}>{errors.email}</span>}
+              <input type="email" name="email" id="email" placeholder='Your Email'  autoComplete='off' />
+              
           </div>
         </div>
-        <input type="text" name="subject" id="subject" placeholder='Subject' onChange={handleChange}   />
-        {errors.subject && <span style={{color: 'red', display: 'block', marginTop: '-13px', marginBottom: '15px'}}>{errors.subject}</span>}
-        <textarea name="message" id="message" rows="8" placeholder='Message' onChange={handleChange}   />
-        {errors.message && <span style={{color: 'red', display: 'block', marginTop: '-13px', marginBottom: '15px'}}>{errors.message}</span>}
+        <input type="text" name="subject" id="subject" placeholder='Subject'  autoComplete='off' />
+        
+        <textarea name="message" id="message" rows="8" placeholder='Message'  autoComplete='off' />
+        
         <input type="submit" value="Send Message" />
       </form>
     </>

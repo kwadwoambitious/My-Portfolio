@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
-import React, {  useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { FaTwitter, FaLinkedin, FaGithub  } from "react-icons/fa";
 import { LuShare } from 'react-icons/lu';
 import { Helmet } from 'react-helmet';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Socials = () => {
   return (
@@ -47,10 +48,12 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+
       emailjs.sendForm('service_qoc1s35', 'template_ojuf1m7', form.current, 'YpOlEA4tAVCYxQj9j')
         .then((result) => {
             console.log(result.text);
             console.log('Message Sent');
+            toast.success("Message sent successfully!");
             e.target.reset();
         }, (error) => {
             console.log(error.text);
@@ -96,8 +99,10 @@ const ContactForm = () => {
   }
 
   return (
+    
     <>
       <form ref={form} onSubmit={sendEmail}>
+        
         <div className='div-flex'>
           <div>
               <input type="text" name="name" id="name" placeholder='Your Name'  autoComplete='off' /> 
@@ -112,6 +117,7 @@ const ContactForm = () => {
         <textarea name="message" id="message" rows="8" placeholder='Message'  autoComplete='off' />
         
         <input type="submit" value="Send Message" />
+        
       </form>
     </>
   )
@@ -154,6 +160,7 @@ const Contact = () => {
         <h2>CONTACT ME</h2>
         <Socials/>
         <ContactForm/>
+        <Toaster position="top-center" reverseOrder={true} />
       </motion.div>
     </>
   )

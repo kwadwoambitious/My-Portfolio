@@ -1,12 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import React, { useState } from 'react';
 import { LuX } from 'react-icons/lu';
-import htmlImg from '../images/skills/html.png';
-import cssImg from '../images/skills/css.png';
-import javascriptImg from '../images/skills/javascript.png';
 import { Helmet } from 'react-helmet';
-
-
 
 const Portfolio = () => {
   const overlay = {
@@ -128,15 +123,15 @@ const Portfolio = () => {
               <h2>STACK USED</h2>
               <div className="skill-content">
                   <div>
-                    <img src={htmlImg} alt="html logo"/>
+                    <img src='../images/skills/html.png' alt="html logo"/>
                     <p>HTML</p>
                   </div>
                   <div>
-                    <img src={cssImg} alt="css logo"/>
+                    <img src='../images/skills/css.png' alt="css logo"/>
                     <p>CSS</p>
                   </div>
                   <div>
-                    <img src={javascriptImg} alt="javascript logo"/>
+                    <img src='../images/skills/javascript.png' alt="javascript logo"/>
                     <p>JavaScript</p>
                   </div>
               </div>
@@ -175,15 +170,15 @@ const Portfolio = () => {
               <h2>STACK USED</h2>
               <div className="skill-content">
                   <div>
-                    <img src={htmlImg} alt="html logo"/>
+                    <img src='../images/skills/html.png' alt="html logo"/>
                     <p>HTML</p>
                   </div>
                   <div>
-                    <img src={cssImg} alt="css logo"/>
+                    <img src='../images/skills/css.png' alt="css logo"/>
                     <p>CSS</p>
                   </div>
                   <div>
-                    <img src={javascriptImg} alt="javascript logo"/>
+                    <img src='../images/skills/javascript.png' alt="javascript logo"/>
                     <p>JavaScript</p>
                   </div>
               </div>
